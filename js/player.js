@@ -81,6 +81,7 @@
       pause = document.getElementById( 'pause' ),
       next = document.getElementById('next'),
       nAnchor = document.createElement('A'),
+      hide = document.getElementById('hide'),
       pAnchor  = document.createElement('A'),
       anchor  = document.createElement('A'),
       supported = Dancer.isSupported(),
@@ -107,6 +108,11 @@
     var pause = true;
     pAnchor.addEventListener( 'click', function () {
       if (pause) {dancer.pause();pause = false}else {dancer.play(); pause = true;};
+    });
+    var hidden = false;
+    hide.addEventListener('click', function() {
+      if(hidden) {document.getElementById('info').style.display = 'block';} else {document.getElementById('info').style.display = 'none';}
+      }
     });
     anchor.addEventListener( 'click', function () {
       dancer.play();
