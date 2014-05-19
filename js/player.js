@@ -112,7 +112,6 @@
     var hidden = false;
     hide.addEventListener('click', function() {
       if(hidden) {document.getElementById('info').style.display = 'block';hidden=false;} else {document.getElementById('info').style.display = 'none';hidden=true;}
-      }
     });
     anchor.addEventListener( 'click', function () {
       dancer.play();
