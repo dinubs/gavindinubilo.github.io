@@ -51,7 +51,7 @@
   }).on();
 
   dancer
-    .waveform( waveform, { strokeStyle: '#666', strokeWidth: 10 });
+    .waveform( waveform, { strokeStyle: '#666', strokeWidth: 3 });
 
   Dancer.isSupported() || loaded();
   !dancer.isLoaded() ? dancer.bind( 'loaded', loaded ) : loaded();
