@@ -42,11 +42,13 @@
   dancer = new Dancer();
   kick = dancer.createKick({
     onKick: function() {
-      ctx.strokeStyle= getRandomColor();
+      // ctx.strokeStyle= getRandomColor();
+      ctx.strokeStyle = '#bada55';
     },
     offKick: function() {
       dancer.waveform.spacing = dancer.getFrequency(400, 800);
-      ctx.strokeStyle= getRandomColor();
+      // ctx.strokeStyle= getRandomColor();
+      ctx.strokeStyle = '#fff';
     }
   }).on();
 
