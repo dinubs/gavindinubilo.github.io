@@ -49,6 +49,7 @@ body {
     text-shadow: 0 0 10px #fff;
     text-decoration: none;
     display: inline-block;
+    vertical-align: middle;
 }
 
 #loading p, p, h1{
