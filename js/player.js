@@ -109,7 +109,8 @@
     }
     var pause = true;
     pAnchor.addEventListener( 'click', function () {
-      if (pause) {dancer.pause();pause = false}else {dancer.play(); pause = true;};
+      if (pause) {dancer.pause();pause = false; pAnchor.innerText = 'Play';}else {dancer.play(); pause = true;pAnchor.innerText = 'Pause';};
+      
     });
     var hidden = false;
     hide.addEventListener('click', function() {
