@@ -113,25 +113,25 @@ body {
     box-shadow: 0 0 10px #fff;
 }
 
-.load .loader,
-.load .loader:before,
-.load .loader:after {
+.loader,
+.loader:before,
+.loader:after {
   background: #FFF;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
-.load .loader:before,
-.load .loader:after {
+.loader:before,
+.loader:after {
   position: absolute;
   top: 0;
   content: '';
 }
-.load .loader:before {
+.loader:before {
   left: -1.5em;
 }
-.load .loader {
+.loader {
   text-indent: -9999em;
   margin: 40% auto;
   position: relative;
@@ -139,7 +139,7 @@ body {
   -webkit-animation-delay: 0.16s;
   animation-delay: 0.16s;
 }
-.load .loader:after {
+.loader:after {
   left: 1.5em;
   -webkit-animation-delay: 0.32s;
   animation-delay: 0.32s;
