@@ -42,7 +42,7 @@ body {
     border: 1px solid #ccc;
     text-align: center;
 }
-#loading a,#pause a, #next a, #song a, #creator, #info, #hideInfo a {
+#loading a,#pause a, #next a, #song, #creator, #info, #hideInfo a {
     display: none;
     color: #fff;
     text-shadow: 0 0 10px #fff;
