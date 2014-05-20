@@ -122,6 +122,7 @@
       document.getElementById('song').style.display = 'inline-block';
       document.getElementById('pause').style.display = 'inline-block';
       document.getElementById('next').style.display = 'inline-block';
+      document.getElementById('hideInfo').style.display = 'inline-block';
     });
   
     nAnchor.addEventListener('click', function() {
