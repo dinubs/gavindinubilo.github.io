@@ -149,23 +149,23 @@ body {
   0%,
   80%,
   100% {
-    box-shadow: 0 0 #FFF;
+    box-shadow: 0 0 10px #FFF;
     height: 4em;
   }
   40% {
-    box-shadow: 0 -2em #ffffff;
-    height: 5em;
+    box-shadow: 0 -2em 10px #ffffff;
+    height: 5em; 
   }
 }
 @keyframes load1 {
   0%,
   80%,
   100% {
-    box-shadow: 0 0 #FFF;
-    height: 4em;
+    box-shadow: 0 0 10px #FFF;
+    height: 4em; 
   }
   40% {
-    box-shadow: 0 -2em #ffffff;
+    box-shadow: 0 -2em 10px #ffffff;
     height: 5em;
   }
 }
