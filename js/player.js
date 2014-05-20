@@ -133,17 +133,12 @@
   console.log(length);
   document.getElementById('song').innerText = songs[i];
   dancer.onceAt(15, function() {
-    kick = dancer.createKick({
-    onKick: function() {
-      // ctx.strokeStyle= getRandomColor();
-      ctx.strokeStyle = '#fff';
-    },
-    offKick: function() {
+    kick.offKick = function() {
+      
       dancer.waveform.spacing = dancer.getFrequency(400, 800);
       ctx.strokeStyle= getRandomColor();
       // ctx.strokeStyle = '#123456';
-    }
-  }).on();
+    };
   console.log("15s");
 
   }).onceAt(length - 1, function() {
