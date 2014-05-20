@@ -78,7 +78,7 @@ body {
     /*display: inline-block;*/
 }
 #song {
-    width: 300px;
+    width: auto;
     font-size: 21px;
 }
 #hideInfo{
