@@ -43,7 +43,7 @@ body {
     text-align: center;
 }
 
-#loading a, #pause a, #next a, #song a, #creator, #info, #hideInfo {
+#loading a, #pause a, #next a, #song a, #creator, #info, #hideInfo a {
     display: none;
     color: #fff;
     text-shadow: 0 0 10px #fff;
