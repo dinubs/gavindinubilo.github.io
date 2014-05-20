@@ -132,7 +132,7 @@
   var length = dancer.audio.duration;
   console.log(length);
   document.getElementById('song').innerText = songs[i];
-  dancer.onceAt(15, function() {
+  dancer.onceAt(10, function() {
     kick.offKick = function() {
       
       dancer.waveform.spacing = dancer.getFrequency(400, 800);
