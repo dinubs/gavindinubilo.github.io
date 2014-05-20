@@ -47,8 +47,8 @@
     },
     offKick: function() {
       dancer.waveform.spacing = dancer.getFrequency(400, 800);
-      ctx.strokeStyle= getRandomColor();
-      // ctx.strokeStyle = '#fff';
+      // ctx.strokeStyle= getRandomColor();
+      ctx.strokeStyle = '#fff';
     }
   }).on();
 
