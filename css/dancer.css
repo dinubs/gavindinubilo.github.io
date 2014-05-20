@@ -150,11 +150,11 @@ body {
   0%,
   80%,
   100% {
-    /*box-shadow: 0 0 10px #FFF;*/
+    box-shadow: 0 0 #FFF;
     height: 4em;
   }
   40% {
-    /*box-shadow: 0 -2em 10px #ffffff;*/
+    box-shadow: 0 -2em #ffffff;
     height: 5em; 
   }
 }
@@ -162,11 +162,11 @@ body {
   0%,
   80%,
   100% {
-    /*box-shadow: 0 0 10px #FFF;*/
+    box-shadow: 0 0 #FFF;
     height: 4em; 
   }
   40% {
-    /*box-shadow: 0 -2em 10px #ffffff;*/
+    box-shadow: 0 -2em #ffffff;
     height: 5em;
   }
 }
