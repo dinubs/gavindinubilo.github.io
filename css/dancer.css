@@ -82,6 +82,7 @@ body {
 #song {
     width: auto;
     font-size: 21px;
+    vertical-align: middle;
 }
 #hideInfo{
     width: 25%;     
