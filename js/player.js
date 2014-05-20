@@ -144,6 +144,7 @@
       // ctx.strokeStyle = '#123456';
     }
   }).on();
+  console.log("15s");
 
   }).onceAt(length - 1, function() {
       nextSong();
