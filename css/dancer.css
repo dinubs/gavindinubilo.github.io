@@ -81,7 +81,7 @@ body {
     width: 300px;
     font-size: 21px;
 }
-#hideInfo {
+#hideInfo a{
     width: 25%;     
 }
 #creator {
