@@ -132,7 +132,20 @@
   var length = dancer.audio.duration;
   console.log(length);
   document.getElementById('song').innerText = songs[i];
-  dancer.onceAt(length - 1, function() {
+  dancer.onceAt(15, function() {
+    kick = dancer.createKick({
+    onKick: function() {
+      // ctx.strokeStyle= getRandomColor();
+      ctx.strokeStyle = '#fff';
+    },
+    offKick: function() {
+      dancer.waveform.spacing = dancer.getFrequency(400, 800);
+      ctx.strokeStyle= getRandomColor();
+      // ctx.strokeStyle = '#123456';
+    }
+  }).on();
+
+  }).onceAt(length - 1, function() {
       nextSong();
   });
   window.dancer = dancer;
