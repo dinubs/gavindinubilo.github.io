@@ -122,6 +122,7 @@ body {
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height:5em;
+  box-shadow: 0 0 10px #fff;
 }
 .loader:before,
 .loader:after {
@@ -149,11 +150,11 @@ body {
   0%,
   80%,
   100% {
-    box-shadow: 0 0 10px #FFF;
+    /*box-shadow: 0 0 10px #FFF;*/
     height: 4em;
   }
   40% {
-    box-shadow: 0 -2em 10px #ffffff;
+    /*box-shadow: 0 -2em 10px #ffffff;*/
     height: 5em; 
   }
 }
@@ -161,11 +162,11 @@ body {
   0%,
   80%,
   100% {
-    box-shadow: 0 0 10px #FFF;
+    /*box-shadow: 0 0 10px #FFF;*/
     height: 4em; 
   }
   40% {
-    box-shadow: 0 -2em 10px #ffffff;
+    /*box-shadow: 0 -2em 10px #ffffff;*/
     height: 5em;
   }
 }
