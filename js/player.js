@@ -144,7 +144,7 @@
     };
   console.log("15s");
 
-  }).onceAt(20, function() {
+  }).onceAt(24, function() {
     kick.offKick = function() {
       ctx.strokeStyle= getRandomColor();
     };
