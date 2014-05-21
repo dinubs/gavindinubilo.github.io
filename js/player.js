@@ -11,11 +11,11 @@
   /*
    * Dancer.js magic
    */
-  var songs = ['Level Up - Childish Gambino',
-               'Do or Die (feat. Childish Gambino) - Flux Pavillion',
-               'Monster (Meg & Dia) - DotEXE',
-               'All is fair in love and brostep - Skrillex'
-              ];
+  // var songs = ['Level Up - Childish Gambino',
+  //             'Do or Die (feat. Childish Gambino) - Flux Pavillion',
+  //             'Monster (Meg & Dia) - DotEXE',
+  //             'All is fair in love and brostep - Skrillex'
+  //             ];
   var colors = ['#123456',
                 '#bada55',
                 '#00FFFF',
