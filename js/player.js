@@ -139,11 +139,15 @@
     kick.offKick = function() {
       
       dancer.waveform.spacing = dancer.getFrequency(400, 800);
-      ctx.strokeStyle= getRandomColor();
-      // ctx.strokeStyle = '#123456';
+      // ctx.strokeStyle= getRandomColor();
+      ctx.strokeStyle = '#ff007c';
     };
   console.log("15s");
 
+  }).onceAt(20, function() {
+    kick.offKick = function() {
+      ctx.strokeStyle= getRandomColor();
+    };
   }).onceAt(length - 1, function() {
       nextSong();
   });
