@@ -9,6 +9,7 @@ body {
 }
 
 main {
+	position: relative;
 	width: 100%;
 	/*height: 100%;*/
 }
@@ -17,15 +18,22 @@ main {
 	width: 100%;
 	height: 350px;
 	margin: 0 auto;
-	margin-top: calc(50% - 175px);
 	text-align: center;
-	vertical-align: middle;
+	position: absolute;   
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
-section:first-of-type>img {
+#one>img {
+	border: 5px solid #374140;
 	border-radius: 50%;
 	width: 200px;
 }
 h1 {
+	color: #1E1E20;
 	margin: 0 auto;
 	width: 25%;
 	border-bottom:10px solid #DC3522;
