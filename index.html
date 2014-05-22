@@ -1,52 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>About Me &mdash; Gavin Dinubilo</title>
-		<link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
-		<link href='css/dancer.css' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<audio src="songs/1.mp3" id="1" type="audio/mp3"></audio>
-		<audio src="songs/2.mp3" id="2" type="audio/mp3"></audio>
-		<audio src="songs/3.mp3" id="3" type="audio/mp3"></audio>
-		<audio src="songs/10.mp3" id="4" type="audio/mp3"></audio>
-		<div id="loading"><div class="loader">Loading...</div></div>
-		<div class="wrap">
-			<div id="song"></div>
-			<div id="pause"></div>
-			<div id="next"></div>
-			<div id="hideInfo">
-				<a href="#" id="hide">Hide Info</a>
-			</div>
-		</div>
-		<div class="wrap" id="info">
-			<img src="images/my-face.jpg" alt="Me!!">
-			<h1>Hi, I'm Gavin</h1>
-			<p>
-				I make websites :)
-			</p>
-		</div>
-		<div id="creator">
-			<i class="fa-cloud"></i>
-			Created by: Gavin Dinubilo<br />
-			<!-- Music by: Jesse Schindler<br /> -->
-			Built with Dancer.js<br />
-			If you have a past of epileptic seizures, please do not watch. Also adjust your volume, there will be music.
-		</div>
-		<canvas id="waveform" height="400" width="1024"></canvas>
-		<!-- Dancer.js -->
-		<script src="src/dancer.js"></script>
-		<script src="src/support.js"></script>
-		<script src="src/kick.js"></script>
-		<script src="src/adapterWebAudio.js"></script>
-		<script src="src/adapterMoz.js"></script>
-		<script src="src/adapterFlash.js"></script>
-		<script src="lib/fft.js"></script>
-		<script src="lib/flash_detect.js"></script>
-		<script src="plugins/dancer.fft.js"></script>
-		<script src="plugins/dancer.waveform.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="About Gavin">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Gavin Dinubilo</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    	<div class="topImg">
 
-		<!-- Demo stuff -->
-		<script src="js/player.js"></script>
-	</body>
+    	</div>
+    	<div class="bottomImg">
+
+    	</div>
+        <main>
+        	<section id="one">
+        		<img src="images/me.jpg" alt="This is Me">
+        		<h1>Hi, I'm Gavin</h1>
+        	</section>
+		</main>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

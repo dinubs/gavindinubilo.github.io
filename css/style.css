@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+	background-color: #D9CB9E;
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	/*height: 100%;*/
+}
+
+main {
+	width: 100%;
+	/*height: 100%;*/
+}
+
+#one{
+	width: 100%;
+	height: 350px;
+	margin: 0 auto;
+	margin-top: calc(50% - 175px);
+	text-align: center;
+	vertical-align: middle;
+}
+section:first-of-type>img {
+	border-radius: 50%;
+	width: 200px;
+}
+h1 {
+	margin: 0 auto;
+	width: 25%;
+	border-bottom:10px solid #DC3522;
+}
