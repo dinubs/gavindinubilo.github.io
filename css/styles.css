@@ -47,12 +47,10 @@ main {
 	margin: 10px auto;
 }
 main>div {
-	display: table;
 	background-color: #F2EBC7;
 	width: 100%;
 }
 main>div:last {
-	display: table;
 	height: 100%;
 }
 .valign {
