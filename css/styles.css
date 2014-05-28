@@ -104,6 +104,10 @@ main>div:last {
 	content: "\2186";
 	margin-top: 30px;
 }
+.scroll-down, .scroll-up {
+	text-decoration: none;
+	color: #fff;
+}
 .scroll-up:before {
 	font-family: "slick";
 	font-size: 30px;
