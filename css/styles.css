@@ -113,8 +113,6 @@ main>div:last {
 	height:400px;
 	position:absolute;
 	top:50%;
-	left:50%;
-	margin-left:-200px; /* width / -2 */
 	margin-top:-200px; /* height / -2 */
 }
 body:full-screen {
