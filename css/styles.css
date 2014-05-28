@@ -128,6 +128,10 @@ img {
 	margin: 10px auto;
 	border: 5px solid #91AA9D; 
 }
+.padding>img {
+	height: 250px;
+	border: none;
+}
 h3 {
 	color: #193441;
 	border-bottom: 1px solid #91AA9D;
