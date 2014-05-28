@@ -93,17 +93,7 @@ main>div:last {
 .text-center {
 	text-align: center;
 }
-.scroll-down:before {
-	font-family: "slick";
-	font-size: 30px;
-	line-height: 1;
-	color: #fff;
-	bottom: 10px;
-	opacity: 0.85;
-	-webkit-font-smoothing: antialiased;
-	content: "\2186";
-	margin-top: 30px;
-}
+
 .scroll-down, .scroll-up {
 	text-decoration: none;
 	color: #fff;
