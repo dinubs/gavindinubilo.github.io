@@ -1,5 +1,112 @@
 (function () {
+	var World;
+	Physics(function (world) {
+	World = world;
+    var viewWidth = window.innerWidth
+        ,viewHeight = window.innerHeight
+        // center of the window
+        ,center = Physics.vector(viewWidth, viewHeight).mult(0.5)
+        // bounds of the window
+        ,viewportBounds = Physics.aabb(0, 0, viewWidth, viewHeight)
+        ,attractor
+        ,edgeBounce
+        ,renderer
+        ;
 
+    // create a renderer
+    renderer = Physics.renderer('canvas', {
+        el: 'waveform'
+        ,width: viewWidth
+        ,height: viewHeight
+		,zIndex: 0
+    });
+    // add the renderer
+    World.add(renderer);
+    // render on each step
+    World.on('step', function () {
+        world.render();
+    });
+
+    // constrain objects to these bounds
+    edgeBounce = Physics.behavior('edge-collision-detection', {
+        aabb: viewportBounds
+        ,restitution: 0.2
+        ,cof: 0.8
+    });
+
+    // resize events
+    window.addEventListener('resize', function () {
+
+        viewWidth = window.innerWidth;
+        viewHeight = window.innerHeight;
+
+        renderer.el.width = viewWidth;
+        renderer.el.height = viewHeight;
+
+        viewportBounds = Physics.aabb(0, 0, viewWidth, viewHeight);
+        // update the boundaries
+        edgeBounce.setAABB(viewportBounds);
+
+    }, true);
+
+    // some fun colors
+    var colors = [
+        '#b58900',
+        '#cb4b16',
+        '#dc322f',
+        '#d33682',
+        '#6c71c4',
+        '#268bd2',
+        '#2aa198',
+        '#859900'
+    ];
+    // create some bodies
+    var l = 100;
+    var bodies = [];
+    var v = Physics.vector(0, 300);
+    var b, r;
+
+    while ( l-- ) {
+        r = 10;
+        b = Physics.body('circle', {
+            radius: r
+            ,mass: r
+            ,x: v.x + center.x
+            ,y: v.y + center.y
+            ,vx: v.perp().mult(0.0001).x
+            ,vx: v.y
+			,label: "circle"
+            ,styles: {
+                fillStyle: colors[ l % colors.length ]
+            }
+        });
+        bodies.push(b);
+        v.perp(true)
+            .mult(10000)
+            .rotate(l / 3);
+    }
+
+    // add things to the world
+    World.add( bodies );
+    World.add([
+        Physics.behavior('constant-acceleration')
+        ,Physics.behavior('body-impulse-response')
+        ,Physics.behavior('body-collision-detection')
+        ,Physics.behavior('sweep-prune')
+        ,edgeBounce
+    ]);
+
+    // subscribe to ticker to advance the simulation
+    Physics.util.ticker.on(function( time ) {
+        world.step( time );
+    });
+    // start the ticker
+    Physics.util.ticker.start();
+});
+var gravity = Physics.behavior('constant-acceleration', {
+	    acc: { x : 0, y: 0.0004 } // this is the default
+	});
+	World.add( gravity );
   var
     AUDIO_FILE = document.getElementById('1'),
     i = 0,
@@ -43,6 +150,7 @@
   kick = dancer.createKick({
     onKick: function() {
       ctx.strokeStyle= getRandomColor();
+	  gravity.setAcceleration({x: 0.4, y: -0.1});
         // dancer
     // .waveform( waveform, { strokeStyle: '#666', strokeWidth: 10});
     },
@@ -52,13 +160,14 @@
       dancer.waveform.spacing = dancer.getFrequency(400, 800);
       // ctx.strokeStyle = "#123456";
       ctx.strokeStyle= getRandomColor();
+  	  gravity.setAcceleration({x: 0, y: 0});
     //       dancer
     // .waveform( waveform, { strokeStyle: '#666', strokeWidth: 10});
     }
   }).on();
 
   dancer
-    .waveform( waveform, { strokeStyle: '#666', strokeWidth: 10 });
+    .waveform( waveform, { strokeStyle: '#666', strokeWidth: 3 });
 
   Dancer.isSupported() || loaded();
   !dancer.isLoaded() ? dancer.bind( 'loaded', loaded ) : loaded();
