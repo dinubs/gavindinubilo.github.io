@@ -11,6 +11,7 @@
         ,attractor
         ,edgeBounce
         ,renderer
+		,integrator
         ;
 
     // create a renderer
@@ -22,6 +23,11 @@
     });
     // add the renderer
     World.add(renderer);
+	integrator = Physics.integrator('verlet', {
+            drag: 0.1
+        });
+
+        world.add( integrator );
     // render on each step
     World.on('step', function () {
         world.render();
@@ -63,7 +69,7 @@
     // create some bodies
     var l = 100;
     var bodies = [];
-    var v = Physics.vector(0, 300);
+    var v = Physics.vector(0, 20);
     var b, r;
 
     while ( l-- ) {
@@ -71,10 +77,11 @@
         b = Physics.body('circle', {
             radius: r
             ,mass: r
-            ,x: v.x + center.x
-            ,y: v.y + center.y
-            ,vx: v.perp().mult(0.0001).x
-            ,vx: v.y
+			,drag: 0.1
+            ,x: v.x +  center.y + Math.random() * 100
+            ,y: v.y + center.y + Math.random() * 100 
+            ,vx: Math.random() * 100 - 50
+            ,vx: Math.random() * 100 - 50
 			,label: "circle"
             ,styles: {
                 fillStyle: colors[ l % colors.length ]
@@ -94,6 +101,7 @@
         ,Physics.behavior('body-collision-detection')
         ,Physics.behavior('sweep-prune')
         ,edgeBounce
+		,integrator
     ]);
 
     // subscribe to ticker to advance the simulation
@@ -104,7 +112,7 @@
     Physics.util.ticker.start();
 });
 var gravity = Physics.behavior('constant-acceleration', {
-	    acc: { x : 0, y: 0.0004 } // this is the default
+	    acc: { x : 0, y: 0 } // this is the default
 	});
 	World.add( gravity );
   var
@@ -160,7 +168,7 @@ var gravity = Physics.behavior('constant-acceleration', {
       dancer.waveform.spacing = dancer.getFrequency(400, 800);
       // ctx.strokeStyle = "#123456";
       ctx.strokeStyle= getRandomColor();
-  	  gravity.setAcceleration({x: 0, y: 0});
+  	  gravity.setAcceleration({x: 0, y: -0.0001});
     //       dancer
     // .waveform( waveform, { strokeStyle: '#666', strokeWidth: 10});
     }
