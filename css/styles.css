@@ -148,6 +148,12 @@ main {
 	top:50%;
 	margin-top:-300px; /* height / -2 */
 }
+.slick-list {
+	height:600px;
+	position:absolute;
+	top:50%;
+	margin-top:-300px; /* height / -2 */
+}
 body:full-screen {
 	height: 100%;
 	width: 100%;
@@ -191,4 +197,7 @@ small {
 	font-weight: normal;
 	font-size: 1rem;
 }
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
