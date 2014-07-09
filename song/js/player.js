@@ -58,7 +58,7 @@
   }).on();
 
   dancer
-    .waveform( waveform, { strokeStyle: '#666', strokeWidth: 10 });
+    .waveform( waveform, { strokeStyle: '#666', strokeWidth: 3 });
 
   Dancer.isSupported() || loaded();
   !dancer.isLoaded() ? dancer.bind( 'loaded', loaded ) : loaded();
@@ -152,7 +152,7 @@
       nextSong();
     });
   }
-  
+
   dancer.load(AUDIO_FILE);
   var length = dancer.audio.duration;
   console.log(length);
