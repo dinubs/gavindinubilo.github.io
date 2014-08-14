@@ -20,6 +20,8 @@ time, mark, audio, video {
 
 body {
 	background-color: #FFFCC4;
+	font-family: Lato;
+	font-size: 17px;
 }
 
 header {
@@ -30,4 +32,5 @@ header {
 a {
 	color: #FF3800;
 	text-decoration: none;
+	font-weight: bolder;
 }
