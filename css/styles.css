@@ -40,3 +40,11 @@ nav {
 	width: 100%;
 	text-align: center;
 }
+	nav a {
+		border-right: 2px solid #009393;
+		padding-right: 5px;
+	}
+	nav a:last-of-type {
+		border-right: none;
+	}
+	}
