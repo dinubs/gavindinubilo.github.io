@@ -24,8 +24,10 @@ body {
 
 header {
 	background-color: #009393;
+	padding: 10px;
 }
 
 a {
 	color: #FF3800;
+	text-decoration: none;
 }
