@@ -34,3 +34,9 @@ a {
 	text-decoration: none;
 	font-weight: bolder;
 }
+
+nav {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
