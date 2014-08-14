@@ -17,3 +17,7 @@ time, mark, audio, video {
 }
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
 * { padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+	background-color: #FFFCC4;
+}
