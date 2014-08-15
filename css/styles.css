@@ -46,6 +46,7 @@ header {
 	nav {
 		padding: 6px;
 		font-size: 0px;
+		width: 100%;
 		background-color: #191B28;
 		text-align: center;
 	}
