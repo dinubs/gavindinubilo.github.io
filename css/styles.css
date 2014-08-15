@@ -144,9 +144,9 @@ section {
 }
 .devicons:hover .popover {
   display: block;
-  -webkit-animation: fade-in .3s alternate 1, move-up .3s alternate 1;
-  -moz-animation: fade-in .3s ease-in-out 1, move-up .3s ease-in-out 1;
-  -ms-animation: fade-in .3s ease-in-out 1, move-up .3s ease-in-out 1;
+  -webkit-animation: fade-in .3s alternate, move-up .3s alternate;
+  -moz-animation: fade-in .3s alternate, move-up .3s alternate;
+  -ms-animation: fade-in .3s alternate, move-up .3s alternate;
 }
 
 @-webkit-keyframes fade-in {
