@@ -127,6 +127,7 @@ section {
   left: -90px;
   padding: 7px 10px;
   position: absolute;
+  text-align: center;
   width: 200px;
   z-index: 4;
 }
