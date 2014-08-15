@@ -112,6 +112,7 @@ section {
 
 /* The element to hover over */
 .devicons {
+  position: relative;
   font-size:20px;
 }
 .devicons .popover {
