@@ -141,6 +141,7 @@ section {
   left: 50%;
   margin-left: -7px;
   position: absolute;
+  transition: all 0.3s;
 }
 .devicons:hover .popover {
   display: block;
