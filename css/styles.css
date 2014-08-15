@@ -65,7 +65,7 @@ a {
 	color: #E83A25;
 	text-decoration:none;
 	text-transform:uppercase;
-	transition: all .2s;
+	transition: all .5s;
 }
 a:hover {
 	color: #073D63;
