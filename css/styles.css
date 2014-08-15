@@ -124,7 +124,7 @@ section {
   display: none;
   font-size: 12px;
   font-family: 'Helvetica',sans-serif;
-  left: -95px;
+  left: -90px;
   padding: 7px 10px;
   position: absolute;
   width: 200px;
@@ -181,7 +181,7 @@ section {
   }
 
   to {
-    bottom: 42px;
+    bottom: 36px;
   }
 }
 @-moz-keyframes move-up {
@@ -190,7 +190,7 @@ section {
   }
 
   to {
-    bottom: 42px;
+    bottom: 36px;
   }
 }
 @-ms-keyframes move-up {
@@ -199,6 +199,6 @@ section {
   }
 
   to {
-    bottom: 42px;
+    bottom: 36px;
   }
 }
