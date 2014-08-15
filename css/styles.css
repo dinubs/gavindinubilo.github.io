@@ -47,7 +47,7 @@ header {
 		text-align: center;
 	}
 	nav a {
-		color: #F20233;
+		color: #ECF0F1/*#F20233*/;
 		border-right: 1px solid #fff;
 		padding-right: 6px;
 	}
