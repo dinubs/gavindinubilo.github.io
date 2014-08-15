@@ -19,12 +19,17 @@ time, mark, audio, video {
 * { padding: 0; margin: 0; box-sizing: border-box;}
 
 body {
-	background-color: #FFE9A3;
+	background-color: #F1EDE2;
 	font-family: Verdana, sans-serif;
 	font-size: 17px;
-	display: table;
 	width: 100%;
 }
+
+header {
+	width: 100%;
+	background-color: #00AA9A;
+}
+
 a {
 	color: #E83A25;
 	text-decoration:none;
@@ -37,25 +42,18 @@ a:hover {
 
 h1 {
 	font-size: 2em;
-	margin-bottom: -5px;
-
 }
 
 section {
-	background-color: #004563;
 	padding: 20px;
 	max-width: 475px;
 	min-width: 300px;
 	width: 50%;
-	margin: 0px auto;
+	margin: 10px auto;
 	border-radius: 5px;
-
-	-webkit-box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.8);
-	-moz-box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.8);
-	box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.8);
 }
 	p {
-		color: #fff;
+		color: #004563;
 		margin: 10px;
 		margin-top: 0px;
 		padding-bottom: 10px;
@@ -70,7 +68,3 @@ section {
 		margin: 10px auto;
 		border-radius: 50%;
 	}
-main {
-	display: table-cell;
-	vertical-align: middle;
-}
