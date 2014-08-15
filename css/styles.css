@@ -54,8 +54,8 @@ header {
 		margin: 0px;
 	}
 	nav a:hover {
-		background-color: #073D63;
-		color: #ECF0F1;
+		color: #073D63;
+		background-color: #ECF0F1;
 	}
 	nav a:last-of-type {
 		border-right: none;
