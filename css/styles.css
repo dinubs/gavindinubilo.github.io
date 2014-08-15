@@ -50,9 +50,7 @@ header {
 	}
 	nav a {
 		color: #ECF0F1/*#F20233*/;
-		border-right: 1px solid #fff;
 		padding: 6px;
-		padding-left: 0px;
 	}
 	nav a:hover {
 		background-color: #073D63;
