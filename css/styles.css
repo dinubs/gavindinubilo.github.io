@@ -45,11 +45,13 @@ header {
 	}
 	nav {
 		padding: 6px;
+		font-size: 0px;
 		background-color: #191B28;
 		text-align: center;
 	}
 	nav a {
 		color: #ECF0F1/*#F20233*/;
+		font-size: 17px;
 		padding: 6px;
 		margin: 0px;
 	}
