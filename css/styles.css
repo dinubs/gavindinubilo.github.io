@@ -128,7 +128,7 @@ section {
   padding: 7px 10px;
   position: absolute;
   text-align: center;
-  width: 200px;
+  width: 100px;
   z-index: 4;
 }
 .devicons .popover:before {
