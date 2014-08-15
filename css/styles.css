@@ -47,12 +47,12 @@ header {
 		text-align: center;
 	}
 	nav a {
-		color: #222;
+		color: #F20233;
 		border-right: 1px solid #fff;
 		padding-right: 6px;
 	}
 	nav a:hover {
-		color: #F20233;
+		color: #222;
 	}
 	nav a:last-of-type {
 		border-right: none;
