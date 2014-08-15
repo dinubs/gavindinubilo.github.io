@@ -37,8 +37,8 @@ body {
 header {
 	width: 100%;
 	background-color: #00AA9A;
- 	padding: 40px 0 60px 0;
-    border-bottom: 4px solid #343434;
+ 	padding: 40px 0 0 0;
+    /*border-bottom: 4px solid #343434;*/
 }	
 	header:after {
 		background-size: 5px;
@@ -51,6 +51,7 @@ header {
 	nav a {
 		color: #ECF0F1/*#F20233*/;
 		padding: 6px;
+		margin: 0px;
 	}
 	nav a:hover {
 		background-color: #073D63;
