@@ -130,9 +130,9 @@ section {
 	text-align: center;
 	width: 100px;
 	z-index: 4;
-	-webkit-animation: fade-in 1s backwards, move-up 1s backwards;
-  	-moz-animation: fade-in 1s backwards, move-up 1s backwards;
-  	-ms-animation: fade-in 1s backwards, move-up 1s backwards;
+	-webkit-animation: fade-in 1s alternate, move-up 1s alternate;
+  	-moz-animation: fade-in 1s alternate, move-up 1s alternate;
+  	-ms-animation: fade-in 1s alternate, move-up 1s alternate;
 }
 .devicons .popover:before {
   border-top: 7px solid rgba(0, 0, 0, 0.85);
