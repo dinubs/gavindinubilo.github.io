@@ -113,23 +113,23 @@ section {
 /* The element to hover over */
 .devicons {
   position: relative;
-  font-size:20px;
+  font-size:35px;
 }
 .devicons .popover {
-  background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 5px;
-  bottom: 30px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-  color: #fff;
-  display: none;
-  font-size: 12px;
-  font-family: 'Helvetica',sans-serif;
-  left: -90px;
-  padding: 7px 10px;
-  position: absolute;
-  text-align: center;
-  width: 100px;
-  z-index: 4;
+ 	background-color: rgba(0, 0, 0, 0.85);
+	border-radius: 5px;
+	bottom: 40px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	display: none;
+	font-size: 12px;
+	font-family: 'Helvetica',sans-serif;
+	left: -33px;
+	padding: 7px 10px;
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	z-index: 4;
 }
 .devicons .popover:before {
   border-top: 7px solid rgba(0, 0, 0, 0.85);
