@@ -118,7 +118,7 @@ section {
 .devicons .popover {
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 5px;
-  bottom: 42px;
+  bottom: 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   color: #fff;
   display: none;
@@ -177,28 +177,28 @@ section {
 }
 @-webkit-keyframes move-up {
   from {
-    bottom: 30px;
+    bottom: 18px;
   }
 
   to {
-    bottom: 32px;
+    bottom: 30px;
   }
 }
 @-moz-keyframes move-up {
   from {
-    bottom: 30px;
+    bottom: 18px;
   }
 
   to {
-    bottom: 32px;
+    bottom: 30px;
   }
 }
 @-ms-keyframes move-up {
   from {
-    bottom: 30px;
+    bottom: 18px;
   }
 
   to {
-    bottom: 32px;
+    bottom: 30px;
   }
 }
