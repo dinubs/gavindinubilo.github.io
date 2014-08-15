@@ -181,7 +181,7 @@ section {
   }
 
   to {
-    bottom: 36px;
+    bottom: 32px;
   }
 }
 @-moz-keyframes move-up {
@@ -190,7 +190,7 @@ section {
   }
 
   to {
-    bottom: 36px;
+    bottom: 32px;
   }
 }
 @-ms-keyframes move-up {
@@ -199,6 +199,6 @@ section {
   }
 
   to {
-    bottom: 36px;
+    bottom: 32px;
   }
 }
