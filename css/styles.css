@@ -130,6 +130,9 @@ section {
 	text-align: center;
 	width: 100px;
 	z-index: 4;
+	-webkit-animation: fade-in 1s backward, move-up 1s backward;
+  	-moz-animation: fade-in 1s backward, move-up 1s backward;
+  	-ms-animation: fade-in 1s backward, move-up 1s backward;
 }
 .devicons .popover:before {
   border-top: 7px solid rgba(0, 0, 0, 0.85);
@@ -145,9 +148,9 @@ section {
 }
 .devicons:hover .popover {
   display: block;
-  -webkit-animation: fade-in 1s 0s 1 alternate, move-up 1s 0s 1 alternate;
-  -moz-animation: fade-in .3s alternate, move-up .3s alternate;
-  -ms-animation: fade-in .3s alternate, move-up .3s alternate;
+  -webkit-animation: fade-in 1s, move-up 1s;
+  -moz-animation: fade-in 1s, move-up 1s;
+  -ms-animation: fade-in 1s, move-up 1s;
 }
 
 @-webkit-keyframes fade-in {
