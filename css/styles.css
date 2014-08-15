@@ -122,7 +122,7 @@ section {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 	color: #fff;
 	opacity: 0;
-	display: none;
+	/*display: none;*/
 	font-size: 12px;
 	font-family: 'Helvetica',sans-serif;
 	left: -33px;
