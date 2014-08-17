@@ -99,7 +99,7 @@ section {
 	width: 75%;
 	margin: 0px auto;
 	margin-bottom: 20px;
-	overflow: auto;
+	overflow-y: auto;
 }
 	.half {
 		float: left;
@@ -133,7 +133,7 @@ section {
 and (min-width : 1224px)
  {
 	.devicons .popover {
-	 	background-color: rgba(0, 0, 0, 0.85);
+	 	background-color: #191B28;
 		border-radius: 5px;
 		bottom: 28px;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -162,7 +162,7 @@ and (min-width : 1224px)
 	}
 	.devicons:hover .popover, .devicons:active .popover {
 	  display: block;
-	  opacity: 1;
+	  opacity: 0.95;
 	  bottom: 40px;
 	}
 }
