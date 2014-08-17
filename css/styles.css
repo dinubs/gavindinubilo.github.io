@@ -180,7 +180,7 @@ and (max-device-width : 480px) {
 	section {
 		width: 98%;
 	}
-		.half {
+		.half:not(:last-of-type) {
 			border-bottom: 1px dashed #151621;
 			width: 100%;
 		}
