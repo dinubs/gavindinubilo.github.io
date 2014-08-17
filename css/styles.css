@@ -130,7 +130,7 @@ section {
 }
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1024px)
+and (min-width : 1224px)
  {
 	.devicons .popover {
 	 	background-color: rgba(0, 0, 0, 0.85);
@@ -170,9 +170,12 @@ and (min-width : 1024px)
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1224px) {
+and (max-device-width : 1024px) {
+	main {
+		padding: 1%;
+	}
 	section {
-		width: 
+		width: 98%;
 	}
 	.devicons {
 		display: block;
@@ -219,7 +222,6 @@ and (max-device-width : 480px) {
 			font-size: 17px;
 			opacity: 1;
 			position: relative;
-
 		}
 
 }
