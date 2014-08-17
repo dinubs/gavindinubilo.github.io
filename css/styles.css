@@ -181,6 +181,7 @@ and (max-device-width : 480px) {
 		width: 98%;
 	}
 		.half {
+			border-bottom: 1px dashed #151621;
 			width: 100%;
 		}
 
