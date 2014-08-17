@@ -156,7 +156,7 @@ section {
   margin-left: -7px;
   position: absolute;
 }
-.devicons:hover .popover {
+.devicons:hover .popover, .devicons:focus .popover {
   display: block;
   opacity: 1;
   bottom: 40px;
@@ -180,9 +180,12 @@ and (max-device-width : 480px) {
 	section {
 		width: 98%;
 	}
-		.half:not(:last-of-type) {
+		.half {
 			border-bottom: 1px dashed #151621;
 			width: 100%;
+		}
+		.half:last-of-type {
+			border-bottom: none;
 		}
 
 }
