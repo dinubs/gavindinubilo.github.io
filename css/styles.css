@@ -162,11 +162,28 @@ section {
   bottom: 40px;
 }
 
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-	/* Styles */
+	.devicons .popover {
+ 	background-color: rgba(0, 0, 0, 0.85);
+	border-radius: 5px;
+	bottom: 28px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	opacity: 0;
+	font-size: 12px;
+	font-family: 'Helvetica',sans-serif;
+	left: -33px;
+	padding: 7px 10px;
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	z-index: 4;
+	transition: all .5s;
+}
 }		
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -186,6 +203,11 @@ and (max-device-width : 480px) {
 		}
 		.half:last-of-type {
 			border-bottom: none;
+		}
+		.devicons .popover {
+			opacity: 1;
+			position: relative;
+
 		}
 
 }
