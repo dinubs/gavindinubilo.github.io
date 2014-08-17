@@ -177,5 +177,8 @@ and (max-device-width : 480px) {
 	main {
 		padding: 1%;
 	}
+	section {
+		width: 98%;
+	}
 
 }
