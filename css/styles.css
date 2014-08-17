@@ -85,6 +85,9 @@ h1 {
     background-color: #191B28;
     -webkit-background-clip: text;
 }
+h2 {
+	margin: 10px;
+}
 
 main {
 	padding: 3em;
@@ -95,7 +98,14 @@ section {
 	padding: 20px;
 	width: 75%;
 	margin: 0px auto;
+	margin-bottom: 20px;
+	overflow: auto;
 }
+	.half {
+		float: left;
+		display: block;
+		width: 50%;
+	}
 	p {
 		color: #191B28;
 		margin: 10px;
@@ -150,62 +160,4 @@ section {
   display: block;
   opacity: 1;
   bottom: 40px;
-  /*-webkit-animation: fade-in 1s, move-up 1s;*/
-  /*-moz-animation: fade-in 1s, move-up 1s;*/
-  /*-ms-animation: fade-in 1s, move-up 1s;*/
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-@-ms-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes move-up {
-  from {
-    bottom: 28px;
-  }
-
-  to {
-    bottom: 40px;
-  }
-}
-@-moz-keyframes move-up {
-  from {
-    bottom: 28px;
-  }
-
-  to {
-    bottom: 40px;
-  }
-}
-@-ms-keyframes move-up {
-  from {
-    bottom: 28px;
-  }
-
-  to {
-    bottom: 40px;
-  }
 }
