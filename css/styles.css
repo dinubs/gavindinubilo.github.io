@@ -86,8 +86,8 @@ h1 {
     -webkit-background-clip: text;
     -webkit-animation:slide 1s linear infinite;-moz-animation:slide 1s linear infinite;-ms-animation:slide 1s linear infinite;-o-animation:slide 1s linear infinite;animation:slide 1s linear infinite;
 }
-@-webkit-keyframes slide { to { background-position: 5px 5px; } }
-@keyframes slide { to { background-position: 5px 5px; } }
+@-webkit-keyframes slide { to { background-position: 10px 0px; } }
+@keyframes slide { to { background-position: 10px 0px; } }
 h2 {
 	margin: 10px;
 }
