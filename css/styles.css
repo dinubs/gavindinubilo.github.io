@@ -121,7 +121,7 @@ section {
 	}
 
 	img {
-		width: 250px;
+		width: 220px;
 	}
 
 /* The element to hover over */
@@ -237,12 +237,16 @@ and (max-device-width : 480px) {
 	position: relative;
 	margin: 20px auto;
 	padding: 0;
+	width: 100%;
+	display: inline-block;
+	margin: 10px;
+	margin-top: 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #151621;
 }
 .da-thumbs li {
 	float: left;
-	margin: 5px;
-	background: #fff;
-	padding: 8px;
+	margin: 2px;
 	width: 220px;
 	position: relative;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
