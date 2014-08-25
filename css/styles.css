@@ -54,6 +54,7 @@ header {
 		color: #ECF0F1/*#F20233*/;
 		font-size: 17px;
 		padding: 6px;
+		text-transform:uppercase;
 		margin: 0px;
 	}
 	nav a:hover {
@@ -67,7 +68,6 @@ header {
 a {
 	color: #E83A25;
 	text-decoration:none;
-	text-transform:uppercase;
 	transition: all .5s;
 }
 a:hover {
