@@ -125,43 +125,38 @@ section {
   position: relative;
   font-size:35px;
 }
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px)
- {
-	.devicons .popover {
-	 	background-color: #191B28;
-		border-radius: 5px;
-		bottom: 28px;
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-		color: #fff;
-		opacity: 0;
-		font-size: 12px;
-		font-family: 'Helvetica',sans-serif;
-		left: -33px;
-		padding: 7px 10px;
-		position: absolute;
-		text-align: center;
-		width: 100px;
-		z-index: 4;
-		transition: all .5s;
-	}
-	.devicons .popover:before {
-	  border-top: 7px solid rgba(0, 0, 0, 0.85);
-	  border-right: 7px solid transparent;
-	  border-left: 7px solid transparent;
-	  bottom: -7px;
-	  content: '';
-	  display: block;
-	  left: 50%;
-	  margin-left: -7px;
-	  position: absolute;
-	}
-	.devicons:hover .popover, .devicons:active .popover {
-	  display: block;
-	  opacity: 0.95;
-	  bottom: 40px;
-	}
+.devicons .popover {
+	background-color: #191B28;
+	border-radius: 5px;
+	bottom: 28px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	opacity: 0;
+	font-size: 12px;
+	font-family: 'Helvetica',sans-serif;
+	left: -33px;
+	padding: 7px 10px;
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	z-index: 4;
+	transition: all .5s;
+}
+.devicons .popover:before {
+	border-top: 7px solid rgba(0, 0, 0, 0.85);
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	bottom: -7px;
+	content: '';
+	display: block;
+	left: 50%;
+	margin-left: -7px;
+	position: absolute;
+}
+.devicons:hover .popover, .devicons:active .popover {
+	display: block;
+	opacity: 0.95;
+	bottom: 40px;
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -173,19 +168,6 @@ and (max-device-width : 1024px) {
 	}
 	section {
 		width: 98%;
-	}
-	.devicons {
-		display: block;
-		height: 35px;
-		line-height: 35px;
-	}
-	.devicons > .popover {
-		height: 30px;
-		display: inline-block;
-		vertical-align: middle;
-		font-size: 17px;
-		opacity: 1;
-		position: relative;
 	}
 }
 
@@ -207,20 +189,6 @@ and (max-device-width : 480px) {
 		.half:last-of-type {
 			border-bottom: none;
 		}
-		.devicons {
-			display: block;
-			height: 35px;
-			line-height: 35px;
-		}
-		.devicons .popover {
-			height: 30px;
-			display: inline-block;
-			vertical-align: middle;
-			font-size: 17px;
-			opacity: 1;
-			position: relative;
-		}
-
 }
 
 
