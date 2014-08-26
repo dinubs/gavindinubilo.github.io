@@ -23,8 +23,8 @@ $(function() {
 });
 
 baguetteBox.run('#da-thumbs', {
-   captions: true,       // true|false - Display image captions
-  buttons: 'auto',      // 'auto'|true|false - Display buttons
+  captions: true,       // true|false - Display image captions
+  buttons: true,      // 'auto'|true|false - Display buttons
   async: false,         // true|false - Load files asynchronously
   preload: 2,           // [number] - How many files should be preloaded from current image
   animation: 'slideIn'
