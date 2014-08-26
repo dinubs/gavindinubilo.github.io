@@ -112,7 +112,7 @@ section {
 		padding-bottom: 10px;
 		border-bottom: 1px dashed #151621;
 	}
-	p:last-of-type {
+	p:last-of-type, ul:last-of-type {
 		border-bottom: none;
 	}
 
