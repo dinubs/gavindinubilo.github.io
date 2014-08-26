@@ -21,3 +21,11 @@
 $(function() {
   $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 });
+
+baguetteBox.run('#da-thumbs', {
+   captions: true,       // true|false - Display image captions
+  buttons: 'auto',      // 'auto'|true|false - Display buttons
+  async: false,         // true|false - Load files asynchronously
+  preload: 2,           // [number] - How many files should be preloaded from current image
+  animation: 'slideIn'
+});
