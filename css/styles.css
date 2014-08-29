@@ -87,6 +87,10 @@ h2 {
 	margin: 10px;
 }
 
+.center {
+	text-align: center;
+}
+
 main {
 	padding: 3em;
 }
