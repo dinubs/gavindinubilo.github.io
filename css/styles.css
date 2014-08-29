@@ -89,6 +89,7 @@ h2 {
 
 .center {
 	text-align: center;
+	width: 50%;
 }
 
 main {
@@ -192,6 +193,9 @@ and (max-device-width : 480px) {
 		.half:last-of-type {
 			border-bottom: none;
 		}
+	.center {
+		width: 100%;
+	}
 }
 
 
