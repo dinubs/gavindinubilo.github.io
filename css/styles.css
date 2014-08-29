@@ -31,6 +31,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 17px;
 	width: 100%;
+	height: 100%;
 }
 
 header {
@@ -91,16 +92,17 @@ h2 {
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
 	width: 50%;
+	margin: 0 auto;
 }
 
 main {
-	padding: 3em;
+	padding: 2em;
 }
 
 section {
 	background-color: #fff;
 	padding: 20px;
-	width: 75%;
+	width: 85%;
 	margin: 0px auto;
 	margin-bottom: 20px;
 	overflow-y: auto;
@@ -195,7 +197,7 @@ and (max-device-width : 480px) {
 			border-bottom: none;
 		}
 	.center {
-		width: 100%;
+		width: 95%;
 	}
 }
 
@@ -250,12 +252,6 @@ and (max-device-width : 480px) {
 	border-bottom: 1px solid rgba(255,255,255,0.5);
 	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
 }
-
-
-.center {
-	text-align: center;
-}
-
 
 /******************************\
 *      Scroll Bar Styles       *
