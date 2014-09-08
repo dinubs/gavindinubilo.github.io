@@ -101,7 +101,7 @@ main {
 }
 
 section {
-	background-color: #fff;
+	/*background-color: #fff;*/
 	padding: 20px;
 	width: 85%;
 	margin: 0px auto;
@@ -290,7 +290,7 @@ and (max-device-width : 480px) {
 }
 
 #console {
-	width: 670px;
+	width: 100%;
 	padding: 40px;
 	height: 620px;
 	margin: 0 auto;
