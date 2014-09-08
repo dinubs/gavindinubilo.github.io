@@ -317,7 +317,7 @@ span.answer {
 	position: fixed;
 	top:0px;
 	width: 100%;
-	background: white;
+	background: transparent;
 }
 #headerSlideContent {
 	width: 900px;
