@@ -53,23 +53,7 @@ header {
 	header:after {
 		background-size: 5px;
 	}
-	nav {
-		padding: 6px;
-		font-size: 0px;
-		width: 100%;
-		background-color: #191B28;
-		text-align: center;
-	}
-	nav a {
-		font-size: 17px;
-		padding: 6px;
-		text-transform:uppercase;
-		margin: 0px;
-		text-transform: uppercase;
-	}
-	nav a:last-of-type {
-		border-right: none;
-	}
+	
 
 a {
 	color: #E83A25;
@@ -307,28 +291,3 @@ and (max-device-width : 480px) {
 span.answer {
 	color: #ccc;
 }
-
-#headerSlideContainer {
-	position: fixed;
-	top:0px;
-	width: 100%;
-}
-#headerSlideContent {
-	/*width: 900px;*/
-	/*height: 50px;*/
-	margin: 0 auto;
-}
-.clear {
-	background-color: transparent;
-	color: #191B28;
-}
-	.clear a {
-		color: #191B28;
-	}
-
-.navBlue {
-	background-color: rgba(25, 27, 40, 0.95);
-}
-	.navBlue a {
-		color: white;
-	}
