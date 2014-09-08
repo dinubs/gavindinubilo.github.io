@@ -34,7 +34,7 @@ $(function() {
 	var bar = $('#headerSlideContainer');
 	var top = bar.css('top');
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 50) {
+		if($(this).scrollTop() > 200) {
 			bar.stop().animate({'top' : '0px'}, 500);
 		} else {
 			bar.stop().animate({'top' : top}, 500);
