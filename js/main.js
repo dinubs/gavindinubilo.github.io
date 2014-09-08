@@ -29,3 +29,15 @@ baguetteBox.run('#da-thumbs', {
   preload: 2,           // [number] - How many files should be preloaded from current image
   animation: 'slideIn'
 });
+
+$(function() {
+	var bar = $('#headerSlideContainer');
+	var top = bar.css('top');
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 50) {
+			bar.stop().animate({'top' : '0px'}, 500);
+		} else {
+			bar.stop().animate({'top' : top}, 500);
+		}
+	});
+});

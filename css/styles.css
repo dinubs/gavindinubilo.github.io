@@ -310,5 +310,18 @@ and (max-device-width : 480px) {
 }
 
 span.answer {
-color: #ccc;
+	color: #ccc;
+}
+
+#headerSlideContainer {
+	position: fixed;
+	top:-50px;
+	width: 100%;
+	background: black;
+}
+#headerSlideContent {
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+	color: white;
 }
