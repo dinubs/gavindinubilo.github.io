@@ -117,6 +117,9 @@ section {
 	margin-bottom: 20px;
 	overflow-y: auto;
 }
+	section.blue {
+		background-color: #568599;
+	}
 	.half {
 		float: left;
 		display: block;
