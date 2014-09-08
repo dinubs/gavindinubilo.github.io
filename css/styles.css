@@ -18,11 +18,11 @@ time, mark, audio, video {
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
 * { padding: 0; margin: 0; box-sizing: border-box; transition: all .5s;}
 ::selection {
-  background: #F20233; /* WebKit/Blink Browsers */
+  background: #568599; /* WebKit/Blink Browsers */
   color: #ffffff;
 }
 ::-moz-selection {
-  background: #F20233; /* Gecko Browsers */
+  background: #568599; /* Gecko Browsers */
   color: #ffffff;
 }
 
@@ -53,7 +53,7 @@ header {
 	header:after {
 		background-size: 5px;
 	}
-	
+
 
 a {
 	color: #E83A25;
