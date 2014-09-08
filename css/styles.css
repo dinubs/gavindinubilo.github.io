@@ -325,8 +325,10 @@ span.answer {
 }
 .clear {
 	background-color: transparent;
+	color: #191B28;
 }
 
 .navBlue {
-	background-color: rgba(86, 133, 153, 0.95);
+	background-color: rgba(25, 27, 40, 0.95);
+	color: white;
 }
