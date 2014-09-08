@@ -315,7 +315,7 @@ span.answer {
 
 #headerSlideContainer {
 	position: fixed;
-	top:-50px;
+	top:0px;
 	width: 100%;
 	background: white;
 }

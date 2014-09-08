@@ -35,9 +35,9 @@ $(function() {
 	var top = bar.css('top');
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 200) {
-			bar.stop().animate({'top' : '0px'}, 500);
+			bar.stop().animate({'background' : 'white'}, 500);
 		} else {
-			bar.stop().animate({'top' : top}, 500);
+			bar.stop().animate({'background' : 'clear'}, 500);
 		}
 	});
 });
