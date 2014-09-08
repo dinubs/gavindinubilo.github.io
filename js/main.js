@@ -35,10 +35,12 @@ $(function() {
 	var top = bar.css('top');
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 200) {
-			bar.stop().animate({'background-color' : 'rgba(255,255,255,0.65)'}, 500);
+			bar.addClass("white");
+      bar.removeClass("clear");
       console.log("YES");
 		} else {
-			bar.stop().animate({'background-color' : 'transparent'}, 500);
+      bar.addClass("clear");
+			bar.removeClass("white");
 		}
 	});
 });

@@ -317,10 +317,16 @@ span.answer {
 	position: fixed;
 	top:0px;
 	width: 100%;
-	background: transparent;
 }
 #headerSlideContent {
 	width: 900px;
 	height: 50px;
 	margin: 0 auto;
+}
+.clear {
+	background-color: transparent;
+}
+
+.white {
+	background-color: rgba(255,255,255, 0.65);
 }
