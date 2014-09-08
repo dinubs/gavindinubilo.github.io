@@ -31,16 +31,16 @@ baguetteBox.run('#da-thumbs', {
 });
 
 $(function() {
-	var bar = $('#headerSlideContainer');
+	var bar = $('#headerSlideContent');
 	var top = bar.css('top');
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 200) {
-			bar.addClass("white");
+			bar.addClass("navBlue");
       bar.removeClass("clear");
       console.log("YES");
 		} else {
       bar.addClass("clear");
-			bar.removeClass("white");
+			bar.removeClass("navBlue");
 		}
 	});
 });
