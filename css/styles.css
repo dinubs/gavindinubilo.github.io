@@ -36,7 +36,8 @@ body {
 
 header {
 	width: 100%;
-	background-color: #00AA9A;
+	background-image: url(../images/reno.jpg) no-repeat;
+	background-color: rgba(0, 170, 154, 0.65);
  	padding: 180px 0 0 0;
 	height: 500px
     /*border-bottom: 4px solid #343434;*/
