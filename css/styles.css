@@ -39,7 +39,7 @@ header {
 	background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(0, 170, 154, 0.65),
+      rgba(0, 170, 154, 0.85),
       rgba(0, 170, 154, 0.65)
     ),
     /* bottom, image */
