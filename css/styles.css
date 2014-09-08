@@ -43,7 +43,8 @@ header {
       rgba(0, 170, 154, 0.65)
     ),
     /* bottom, image */
-    url(../images/reno.jpg);
+    url(../images/reno.jpg) no-repeat cover;
+	background-size: cover;
 	/*background-color: rgba(0, 170, 154, 0.65);*/
  	padding: 180px 0 0 0;
 	height: 500px
