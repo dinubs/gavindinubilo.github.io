@@ -34,7 +34,7 @@ $(function() {
 	var bar = $('#headerSlideContent');
 	var top = bar.css('top');
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 200) {
+		if($(this).scrollTop() > 20) {
 			bar.addClass("navBlue");
       bar.removeClass("clear");
       console.log("YES");
