@@ -71,6 +71,7 @@ h1 {
     text-align: center;
     margin-top: 0;
  		color: #191B28;
+		transition: all 1s;
 }
 h2 {
 	margin: 10px;
@@ -252,8 +253,8 @@ section {
 	text-align: left;
 	font-size: 13px;
 	color: #fafafa;
-	-webkit-transition: all 1.5s;
-	transition: all 1.5s;
+	-webkit-transition: all .75s;
+	transition: all .75s;
 }
 
 #console {
@@ -264,15 +265,16 @@ section {
 	background: #383737;
 }
 
-div.down {
+.down {
 	margin-top: 75px !important;
 	opacity: 0;
 }
 
-div.up {
+.up {
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;
 	opacity: 1;
+	transition: all 1.5s;
 }
 
 span.answer {

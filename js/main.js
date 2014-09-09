@@ -1,6 +1,5 @@
  $(document).ready(function(){
     $("#navigation").sticky({topSpacing:0});
-  });
 
  $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -31,5 +30,10 @@ baguetteBox.run('#da-thumbs', {
 });
 
 $('#code').viewportChecker({
-                    classToAdd: "up"
-                });
+  classToAdd: "up"
+});
+
+  $('h1, .arrow').viewportChecker({
+    classToAdd: "up"
+  });
+});
