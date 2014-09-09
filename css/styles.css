@@ -50,6 +50,7 @@ header {
  	padding: 180px 0 0 0;
 	height: 100%;
     /*border-bottom: 4px solid #343434;*/
+    box-shadow: 0 10px 10px #ddd;
 }
 	header:after {
 		background-size: 5px;
