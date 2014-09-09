@@ -50,7 +50,9 @@ header {
  	padding: 180px 0 0 0;
 	height: 100%;
     /*border-bottom: 4px solid #343434;*/
-    box-shadow: 0 10px 10px #ddd;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	   -moz-box-shadow:    0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+			box-shadow:         0px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 	header:after {
 		background-size: 5px;
