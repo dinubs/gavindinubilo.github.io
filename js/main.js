@@ -29,3 +29,7 @@ baguetteBox.run('#da-thumbs', {
   preload: 2,           // [number] - How many files should be preloaded from current image
   animation: 'slideIn'
 });
+
+$('#code').viewportChecker({
+                    classToAdd: "up"
+                });

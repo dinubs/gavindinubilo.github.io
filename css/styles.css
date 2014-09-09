@@ -85,10 +85,10 @@ h2 {
 section {
 	/*background-color: #fff;*/
 	padding: 20px 0;
-	padding-bottom: 0; 		
+	padding-bottom: 0;
 	width: 100%;
 	margin: 0px auto;
-	overflow-y: auto;
+	overflow-y: hidden;
 }
 	section.blue {
 		background-color: #225378;
@@ -242,7 +242,6 @@ section {
 }
 
 #code {
-/* margin-top: 150px; */
 	border-radius: 5px;
 	max-width: 750px;
 	margin: 0 auto;
@@ -253,6 +252,8 @@ section {
 	text-align: left;
 	font-size: 13px;
 	color: #fafafa;
+	-webkit-transition: all 1.5s;
+	transition: all 1.5s;
 }
 
 #console {
@@ -261,6 +262,17 @@ section {
 	height: 100%;
 	margin: 0 auto;
 	background: #383737;
+}
+
+div.down {
+	margin-top: 75px !important;
+	opacity: 0;
+}
+
+div.up {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	opacity: 1;
 }
 
 span.answer {
