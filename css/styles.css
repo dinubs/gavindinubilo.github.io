@@ -46,7 +46,7 @@ header {
       rgba(0, 170, 154, 0.35)
     ), url(../images/reno.jpg) no-repeat center;
 	background-size: cover;
- 	padding: 180px 0 0 0;
+ 	padding: 125px 0 0 0;
 	height: 100%;
 }
 	header:after {
