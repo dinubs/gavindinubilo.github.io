@@ -43,8 +43,7 @@ header {
 	background:
     linear-gradient(
       rgba(0, 170, 154, 0.35),
-      rgba(0, 170, 154, 0.35),
-      #225378
+      rgba(0, 170, 154, 0.35)
     ), url(../images/reno.jpg) no-repeat center;
 	background-size: cover;
 	/*background-color: rgba(0, 170, 154, 1);*/
