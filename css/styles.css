@@ -46,13 +46,8 @@ header {
       rgba(0, 170, 154, 0.35)
     ), url(../images/reno.jpg) no-repeat center;
 	background-size: cover;
-	/*background-color: rgba(0, 170, 154, 1);*/
  	padding: 180px 0 0 0;
 	height: 100%;
-    /*border-bottom: 4px solid #343434;*/
-    -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
-	   -moz-box-shadow:    0px 7px 5px 0px rgba(50, 50, 50, 0.75);
-			box-shadow:         0px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 	header:after {
 		background-size: 5px;
@@ -60,12 +55,12 @@ header {
 
 
 a {
-	color: #E83A25;
+	color: #BD4932;
 	text-decoration:none;
 	transition: all .5s;
 }
 a:hover {
-	text-decoration: underline overline;
+	text-decoration: underline;
 }
 
 h1 {
@@ -83,18 +78,16 @@ h2 {
 
 .center {
 	text-align: center;
-	font-family: 'Open Sans Condensed', sans-serif;
 	width: 50%;
 	margin: 0 auto;
 }
 
 section {
 	/*background-color: #fff;*/
-	padding: 20px;
-	padding-bottom: 0;
+	padding: 20px 0;
+	padding-bottom: 0; 		
 	width: 100%;
 	margin: 0px auto;
-	margin-bottom: 20px;
 	overflow-y: auto;
 }
 	section.blue {
@@ -105,12 +98,25 @@ section {
 			margin-top: 25px;
 			margin-bottom: 25px;
 		}
+	section.red {
+		background-color: #BD4932;
+	}
+		section.red p {
+			color: #191B28;
+		}
+	section.white {
+		background-color: #DB9E36;
+	}
+		section.white p {
+			color: #191B28;
+		}
 	.half {
 		float: left;
 		display: block;
 		width: 50%;
 	}
 	p {
+		font-family: 'Open Sans Condensed', sans-serif;
 		color: #191B28;
 		margin: 10px;
 		margin-top: 0px;
