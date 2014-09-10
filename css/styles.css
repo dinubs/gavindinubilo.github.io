@@ -70,8 +70,8 @@ h1 {
     font-size: 4em;
     text-align: center;
     margin-top: 0;
- 		color: #191B28;
-		transition: all 1s;
+ 	color: #105B63;
+	transition: all 1s;
 }
 h2 {
 	margin: 10px;
@@ -92,7 +92,7 @@ section {
 	overflow-y: hidden;
 }
 	section.blue {
-		background-color: #225378;
+		background-color: #105B63;
 	}
 		section.blue p {
 			color: white;
