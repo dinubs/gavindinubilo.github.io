@@ -77,9 +77,14 @@ h2 {
 	margin: 10px;
 }
 
+h3 {
+	color: #191B28;
+	font-size: 1.5em;
+}
+
 .center {
 	text-align: center;
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
 }
 
