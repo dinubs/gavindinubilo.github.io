@@ -32,6 +32,10 @@ baguetteBox.run('#da-thumbs', {
 $('#code').viewportChecker({
   classToAdd: "up"
 });
+$('.funItem').viewportChecker({
+  classToAdd: "funUp"
+});
+
 
   $('h1, .arrow').viewportChecker({
     classToAdd: "up"

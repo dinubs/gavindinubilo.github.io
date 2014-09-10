@@ -81,7 +81,7 @@ h3 {
 	color: #191B28;
 	font-size: 1em;
 	font-weight: bolder;
-	margin-bottom: 5px;
+	margin: 40px;
 }
 h4 {
 	color: #191B28;
@@ -99,7 +99,8 @@ h4:not(:first-of-type) {
 .center {
 	text-align: center;
 	width: 100%;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 section {
@@ -130,13 +131,17 @@ section {
 		section.orange p {
 			color: #191B28;
 		}
+	section.white {
+		background-color: #FFFAD5; 
+	}
+		section.white p {
+			color: #191B28;
+		}
+
 	.inner-content {
 		max-width: 900px;
 		margin: 0 auto;
 		margin-bottom: 10px;
-	}
-	img {
-		width: 220px;
 	}
 
 /******************************\
@@ -185,7 +190,7 @@ section {
 	border-bottom-left-radius: 	5px;
 }
 
-.down {
+.down, .funItem {
 	margin-top: 75px !important;
 	opacity: 0;
 }
@@ -226,6 +231,29 @@ p {
 	}
 		li {
 			font-size: 0.75em;
+		}
+
+.funItem {
+	background-color: #fafafa;
+	float: left;
+	width: 48%;
+	margin: 10px 1%;
+}
+
+.funUp {
+	margin-top: 10px !important;
+	opacity: 1;
+	transition: all 2s;
+}
+	.funDescription {
+		padding: 10px;
+	}
+	.funImage {
+		padding: 0;
+		height: 100%;
+	}
+		.funImage img {
+			width: 100%;
 		}
 /* Media Queries for inner-content and code block */
 
