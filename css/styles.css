@@ -79,7 +79,20 @@ h2 {
 
 h3 {
 	color: #191B28;
-	font-size: 1.5em;
+	font-size: 0.75em;
+	margin-bottom: 5px;
+}
+h4 {
+	color: #191B28;
+	border-bottom: 1px dashed #191B28;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+	font-size: 0.75em;
+	font-style: italic;
+	width: 100%;
+}
+h4:not(:first-of-type) {
+	margin-top: 20px;
 }
 
 .center {
@@ -89,10 +102,10 @@ h3 {
 }
 
 section {
-	/*background-color: #fff;*/
 	padding: 20px 0;
 	padding-bottom: 0;
 	width: 100%;
+	min-height: 100%;
 	margin: 0px auto;
 	overflow-y: hidden;
 }
@@ -110,14 +123,14 @@ section {
 		section.red p {
 			color: #191B28;
 		}
-	section.white {
+	section.orange {
 		background-color: #DB9E36;
 	}
-		section.white p {
+		section.orange p {
 			color: #191B28;
 		}
 	.inner-content {
-		max-width: 1240px;
+		max-width: 900px;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
@@ -149,6 +162,7 @@ section {
 	border-radius: 5px;
 	max-width: 750px;
 	margin: 0 auto;
+	margin-bottom: 25px;
 	padding-top: 15px;
 	font-size: 30px;
 	background: #ccc;
@@ -166,6 +180,8 @@ section {
 	height: 100%;
 	margin: 0 auto;
 	background: #383737;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 	5px;
 }
 
 .down {
@@ -175,17 +191,53 @@ section {
 
 .up {
 	margin-top: 0px !important;
-	margin-bottom: 0px !important;
 	opacity: 1;
-	transition: all 1.5s;
+	transition: all 2s;
 }
 
 span.answer {
 	color: #ccc;
 }
+
+.rounded {
+	border-radius: 50%; 	
+}
+.school-icon {
+	width: 75px;
+	float: left;
+	margin-left: -100px;
+	margin-top: -25px;
+}
+.right {
+	float: right;
+	text-align: right;
+}
+
+p {
+	margin-bottom: 20px;
+}
+	.resumeText {
+		margin-bottom: 75px;
+	}
+	ul {
+		padding-left: 40px;
+		list-style-type: circle;
+	}
+		li {
+			font-size: 0.75em;
+		}
 /* Media Queries for inner-content and code block */
 
-@media (max-width: 1240px) {
+@media (max-width: 1100px) {
+	.school-icon {
+		width: 75px;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 900px) {
 	.inner-content {
 		margin: 0 15px;
 	}
@@ -194,5 +246,12 @@ span.answer {
 @media (max-width: 750px) {
 	#code {
 		margin: 0 15px;
+	}
+	.resume p a:first-child {
+		display: block;
+	}
+	.right {
+		text-align: left;
+		float: none;
 	}
 }
