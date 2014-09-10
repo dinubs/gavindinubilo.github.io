@@ -40,7 +40,7 @@ $('.funItem').viewportChecker({
 
     function drawElement(x,y){
        snap.polyline( [[w*.5,0],[0,h*.25],[0,h*.75],[w*.5,h],[w,h*.75],[w,h*.25]] ).attr({
-          transform:'translate('+x*w+','+y*h+')',
+          transform:'translate('+(x*w)+','+y*h+')',
           opacity:Math.random() * 0.3,
           stroke: "none"
         }).hover(function(e,a){Snap(e.srcElement).animate({
