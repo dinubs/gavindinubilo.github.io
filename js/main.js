@@ -1,5 +1,4 @@
  $(document).ready(function(){
-    $("#navigation").sticky({topSpacing:0});
 
  $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -16,19 +15,6 @@
   });
 });
 
-
-$(function() {
-  $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-});
-
-baguetteBox.run('#da-thumbs', {
-  captions: true,       // true|false - Display image captions
-  buttons: true,      // 'auto'|true|false - Display buttons
-  async: false,         // true|false - Load files asynchronously
-  preload: 2,           // [number] - How many files should be preloaded from current image
-  animation: 'slideIn'
-});
-
 $('#code').viewportChecker({
   classToAdd: "up"
 });
@@ -40,4 +26,38 @@ $('.funItem').viewportChecker({
   $('h1, .arrow').viewportChecker({
     classToAdd: "up"
   });
+
+
+  var snap = Snap('#svg');
+  var s = 40;
+  var h = s*2;
+  var w = Math.sqrt(3)*s;
+
+  window.onload = function () {
+    draw();
+  }
+  function draw(){
+
+    function drawElement(x,y){
+       snap.polyline( [[w*.5,0],[0,h*.25],[0,h*.75],[w*.5,h],[w,h*.75],[w,h*.25]] ).attr({
+          transform:'translate('+x*w+','+y*h+')',
+          opacity:Math.random() * 0.3,
+          stroke: "none"
+        }).hover(function(e,a){Snap(e.srcElement).animate({
+            fill:'#00AA9A',
+          },500);
+        }).touchmove(function(e,a){Snap(e.srcElement).animate({
+            fill:'#00AA9A',
+          },500);
+        });;
+    };
+
+    for(var i = -1; i < window.innerWidth /w; i+=1){
+      for(var j = -1; j < window.innerHeight / h ; j += 1.5){
+        drawElement(i,j);
+        drawElement(i+.5,j+.75);
+      }
+    }
+
+  }
 });

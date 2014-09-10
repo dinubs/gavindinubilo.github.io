@@ -40,11 +40,7 @@ body {
 
 header {
 	width: 100%;
-	background:
-    linear-gradient(
-      rgba(0, 170, 154, 0.35),
-      rgba(0, 170, 154, 0.35)
-    ), url(../images/reno.jpg) no-repeat center;
+	background: #00AA9A;
 	background-size: cover;
  	padding: 125px 0 0 0;
 	height: 100%;
@@ -52,10 +48,17 @@ header {
 	header:after {
 		background-size: 5px;
 	}
+	#svg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
 
 
 a {
-	color: #BD4932;
+	color: #2980B9;
 	text-decoration:none;
 	transition: all .5s;
 }
@@ -70,15 +73,21 @@ h1 {
     font-size: 4em;
     text-align: center;
     margin-top: 0;
- 	color: #191B28;
-	transition: all 1s;
+ 		color: #191B28;
+		transition: all 1s;
+		display: block;
 }
+ 	h1 > small {
+		font-family: 'Lato', sans-serif;
+		font-size: 0.25em;
+		display: block;
+	}
 h2 {
 	margin: 10px;
 }
 
 h3 {
-	color: #191B28;
+	/*color: #191B28;*/
 	font-size: 1em;
 	font-weight: bolder;
 	margin: 40px;
@@ -111,10 +120,15 @@ section {
 	margin: 0px auto;
 	overflow-y: hidden;
 }
-	section.blue {
-		background-color: #105B63;
+	section:nth-of-type(odd) {
+		background-color: #2C3E50;
+		color: #ECF0F1;
 	}
-		section.blue p {
+
+	section:nth-of-type(even) {
+		background-color: #ECF0F1;
+	}
+	/*	section.blue p {
 			color: white;
 			margin-top: 25px;
 			margin-bottom: 25px;
@@ -132,11 +146,11 @@ section {
 			color: #191B28;
 		}
 	section.white {
-		background-color: #FFFAD5; 
+		background-color: #FFFAD5;
 	}
 		section.white p {
 			color: #191B28;
-		}
+		}*/
 
 	.inner-content {
 		max-width: 900px;
@@ -191,12 +205,12 @@ section {
 }
 
 .down, .funItem {
-	margin-top: 75px !important;
+	margin-top: 10px !important;
 	opacity: 0;
 }
 
 .up {
-	margin-top: 0px !important;
+	/*margin-top: 0px !important;*/
 	opacity: 1;
 	transition: all 2s;
 }
@@ -206,7 +220,7 @@ span.answer {
 }
 
 .rounded {
-	border-radius: 50%; 	
+	border-radius: 50%;
 }
 .school-icon {
 	width: 75px;
@@ -241,13 +255,16 @@ p {
 }
 
 .funUp {
-	margin-top: 10px !important;
+	/*margin-top: 10px !important;*/
 	opacity: 1;
 	transition: all 2s;
 }
 	.funDescription {
 		padding: 10px;
 	}
+		.funDescription p {
+			color: #2C3E50 !important;
+		}
 	.funImage {
 		padding: 0;
 		height: 100%;
