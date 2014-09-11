@@ -1,4 +1,9 @@
- $(document).ready(function(){
+
+  var t = new Trianglify({
+    x_gradient: ["#edf8e9","#bae4b3","#74c476","#31a354","#006d2c"]});
+  var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+  document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
+$(document).ready(function(){
 
  $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -26,38 +31,4 @@ $('.funItem').viewportChecker({
   $('h1, .arrow').viewportChecker({
     classToAdd: "up"
   });
-
-
-  var snap = Snap('#svg');
-  var s = 40;
-  var h = s*2;
-  var w = Math.sqrt(3)*s;
-
-  window.onload = function () {
-    draw();
-  }
-  function draw(){
-
-    function drawElement(x,y){
-       snap.polyline( [[w*.5,0],[0,h*.25],[0,h*.75],[w*.5,h],[w,h*.75],[w,h*.25]] ).attr({
-          transform:'translate('+(x*w)+','+y*h+')',
-          opacity:Math.random() * 0.3,
-          stroke: "none"
-        }).hover(function(e,a){Snap(e.srcElement).animate({
-            fill:'#00AA9A',
-          },500);
-        }).touchmove(function(e,a){Snap(e.srcElement).animate({
-            fill:'#00AA9A',
-          },500);
-        });;
-    };
-
-    for(var i = -1; i < window.innerWidth /w; i+=1){
-      for(var j = -1; j < window.innerHeight / h ; j += 1.5){
-        drawElement(i,j);
-        drawElement(i+.5,j+.75);
-      }
-    }
-
-  }
 });
