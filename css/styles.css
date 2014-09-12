@@ -325,8 +325,8 @@ p {
 	}
 }
 @media (max-width: 480px) {
-	.funItem {
-		width: 100%;
+	.funItem, .ih-item {
+		width: 100% !important;
 		margin: 20px auto;
 	}
 }
