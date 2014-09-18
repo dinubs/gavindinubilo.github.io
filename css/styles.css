@@ -128,29 +128,6 @@ section {
 	section:nth-of-type(even) {
 		background-color: #ECF0F1;
 	}
-	/*	section.blue p {
-			color: white;
-			margin-top: 25px;
-			margin-bottom: 25px;
-		}
-	section.red {
-		background-color: #BD4932;
-	}
-		section.red p {
-			color: #191B28;
-		}
-	section.orange {
-		background-color: #DB9E36;
-	}
-		section.orange p {
-			color: #191B28;
-		}
-	section.white {
-		background-color: #FFFAD5;
-	}
-		section.white p {
-			color: #191B28;
-		}*/
 
 	.inner-content {
 		max-width: 900px;
@@ -236,12 +213,20 @@ span.answer {
 p {
 	margin-bottom: 20px;
 }
-	.resumeText {
-		margin-bottom: 75px;
+  .resume-item {
+    border-bottom: 1px dotted #2C3E50;
+    margin-bottom: 30px;
+  }
+  .resume-item:last-child {
+    border-bottom: none;
+  }
+	.resume-text {
+    font-size: 0.8em;
 	}
 	ul {
 		padding-left: 40px;
 		list-style-type: circle;
+    margin-bottom: 20px;
 	}
 		li {
 			font-size: 0.75em;
