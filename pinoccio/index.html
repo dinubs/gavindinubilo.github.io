@@ -13,10 +13,19 @@
 <body>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://api.pinocc.io/pinoccio.js"></script>
     <script src="../js/gyro.min.js"></script>
     <script>
+
+    	var api = pinoccioAPI('96496cq2hj4gngbfa1lnsifjk2');
+
+		var s = api.sync({stale:1});
+
 	    gyro.startTracking(function(o) {
 	       	$("body").append("X: " + o.x + ", Y: " + o.y + ", Z: " + o.z + "\n");
+	       	if (o.y > 5) {
+
+	       	}
 	        // o.x, o.y, o.z for accelerometer
 	        // o.alpha, o.beta, o.gamma for gyro
 	    });
