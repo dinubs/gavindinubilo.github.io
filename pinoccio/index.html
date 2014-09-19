@@ -16,7 +16,7 @@
     <script src="../js/gyro.min.js"></script>
     <script>
 	    gyro.startTracking(function(o) {
-	       	$("body").append(o.x + ", " + o.y + ", " + o.z);
+	       	$("body").append("X: " + o.x + ", Y: " + o.y + ", Z: " + o.z + "\n");
 	        // o.x, o.y, o.z for accelerometer
 	        // o.alpha, o.beta, o.gamma for gyro
 	    });
