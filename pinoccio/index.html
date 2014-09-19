@@ -22,9 +22,11 @@
 		var s = api.sync({stale:1});
 
 	    gyro.startTracking(function(o) {
-	       	$("body").append("X: " + o.x + ", Y: " + o.y + ", Z: " + o.z + "\n");
+	       	$("body").append("X: " + o.x + ", Y: " + o.y + ", Z: " + o.z + "<br>");
 	       	if (o.y > 5) {
-
+	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.left")'}},function(err,data){
+  					console.log('much win? ',error,data)
+				});
 	       	}
 	        // o.x, o.y, o.z for accelerometer
 	        // o.alpha, o.beta, o.gamma for gyro
