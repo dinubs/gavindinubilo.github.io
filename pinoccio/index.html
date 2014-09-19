@@ -6,17 +6,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Untitled</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="author" href="humans.txt">
 </head>
 
 <body>
 
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../js/gyro.min.js"></script>
     <script>
 	    gyro.startTracking(function(o) {
-	       	console.log(o);
+	       	$("body").append(o.x + ", " + o.y + ", " + o.z);
 	        // o.x, o.y, o.z for accelerometer
 	        // o.alpha, o.beta, o.gamma for gyro
 	    });
