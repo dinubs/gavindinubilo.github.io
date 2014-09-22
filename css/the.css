@@ -160,26 +160,55 @@ section {
   max-width: 750px;
   margin: 0 auto;
   margin-bottom: 25px;
-  padding-top: 15px;
+  /*padding-top: 15px;*/
   font-size: 30px;
   background: #ccc;
-  font-family: 'Monaco', 'Courier New';
   text-align: left;
   font-size: 13px;
-  color: #fafafa;
+  color: #181818;
   -webkit-transition: all .75s;
   transition: all .75s;
 }
+  .terminalTop {
+    padding-left: 5px;
+    padding-top: 3px;
+    line-height: 16px;
+  }
+    .terminalTop .text {
+      margin-left: 10px;
+      display: inline-block;
+    }
+    .terminalTop .circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+      .terminalTop .circle.red {
+        background-color: #8E2800;
+      }
+      .terminalTop .circle.yellow {
+        background-color: #FFB03B;
+      }
+      .terminalTop .circle.green {
+        background-color: #468966;
+      }
 
 #console {
   width: 100%;
   padding: 10px;
   height: 100%;
+  font-family: 'Monaco', 'Courier New';
   margin: 0 auto;
   background: #383737;
+  color: #fafafa;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 	5px;
 }
+  #console .answer {
+    /*padding-left: 25%;*/
+    width: 25%;
+  }
 
 .down, .funItem {
   margin-top: 10px !important;
