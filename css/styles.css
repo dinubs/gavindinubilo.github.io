@@ -341,10 +341,9 @@ p {
 }
 
 .email .popover {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #2C3E50;
   border-radius: 5px;
   bottom: 30px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   color: #fff;
   display: none;
   font-size: 12px;
@@ -356,7 +355,7 @@ p {
   z-index: 4;
 }
 .email .popover:before {
-  border-top: 7px solid rgba(0, 0, 0, 0.85);
+  border-top: 7px solid #2C3E50;
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
   bottom: -7px;
@@ -368,9 +367,9 @@ p {
 }
 .email:hover .popover {
   display: block;
-  -webkit-animation: fade-in .2s linear 1, move-up .2s linear 1;
-  -moz-animation: fade-in .2s linear 1, move-up .2s linear 1;
-  -ms-animation: fade-in .2s linear 1, move-up .2s linear 1;
+  -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;
+  -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
+  -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
 }
 
 @-webkit-keyframes fade-in {
