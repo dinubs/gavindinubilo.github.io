@@ -5,10 +5,25 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Untitled</title>
-    <link rel="stylesheet" href="../css/style.css">
+	<style>
+		html, body {
+			height: 100%;
+		}
+		div {
+			width: 100%;
+			height: 100%;
+			background-color: #ff1234;
+			font-family: Arial;
+			line-height: calc(100% - 4em);
+			font-size: 4em;
+			text-align: center; 
+		}
+
+	</style>
     <link rel="author" href="humans.txt">
 </head>
 <body>
+	<div class="direction"></div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://api.pinocc.io/pinoccio.js"></script>
     <script src="js/gyro.min.js"></script>
@@ -19,35 +34,39 @@
 		var s = api.sync({stale:1});
 	    gyro.startTracking(function(o) {
 	    	var running = false;
-	       	$("body").append("X: " + o.x + ", Y: " + o.y + ", Z: " + o.z + "<br>");
 	       	if (o.y > 5) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.left")'}},function(err,data){
   					console.log('much win? ',error,data)
 				});
+				$(".direction").text("left");
 				running = true;
 	       	}
 	       	if (o.y < -5) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.right")'}},function(err,data){
   					console.log('much win? ',error,data)
 				});
+				$(".direction").text("right");
 				running = true;
 	       	}
 	       	if (o.x > 5) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.forward")'}},function(err,data){
   					console.log('much win? ',error,data)
 				});
+				$(".direction").text("forward");
 				running = true;
 	       	}
 	       	if (o.x < -5) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.backward")'}},function(err,data){
   					console.log('much win? ',error,data)
 				});
+				$(".direction").text("backward");
 				running = true;
 	       	}
 	       	if (running == false) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.stop")'}},function(err,data){
   					console.log('much win? ',error,data)
 				});
+				$(".direction").text("stop");
 	       	}
 	    });
     </script>
