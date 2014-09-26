@@ -45,12 +45,11 @@
 				$(".direction").text("stop");
 		}, false);
 		window.addEventListener("keydown", onKeyDown, false);
-
+		var running = false;
 		// Keydown function, for the DJ
 		function onKeyDown(event){
 			var keyCode = event.keyCode;
 			console.log(keyCode);
-			var running = false;
 	       	if (keyCode == 37) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.left")'}},function(err,data){
   					console.log('much win? ',err,data)
@@ -81,7 +80,6 @@
 	       	}
 		}
 	    gyro.startTracking(function(o) {
-	    	var running = false;
 	       	if (o.y > 5) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.left")'}},function(err,data){
   					console.log('much win? ',err,data)
