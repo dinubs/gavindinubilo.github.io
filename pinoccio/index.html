@@ -38,46 +38,81 @@
 
 		var s = api.sync({stale:1});
 
-		window.addEventListener("keyup", onKeyDown, false);
+		window.addEventListener("keyup", function() {
+	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.stop")'}},function(err,data){
+  					console.log('much win? ',err,data)
+				});
+				$(".direction").text("stop");
+		}, false);
+		window.addEventListener("keydown", onKeyDown, false);
 
 		// Keydown function, for the DJ
 		function onKeyDown(event){
 			var keyCode = event.keyCode;
 			console.log(keyCode);
-		}
-	    gyro.startTracking(function(o) {
-	    	var running = false;
-	       	if (o.y > 5) {
+			var running = false;
+	       	if (keyCode == 37) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.left")'}},function(err,data){
-  					console.log('much win? ',error,data)
+  					console.log('much win? ',err,data)
 				});
 				$(".direction").text("left");
 				running = true;
 	       	}
-	       	if (o.y < -5) {
+	       	if (keyCode == 39) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.right")'}},function(err,data){
-  					console.log('much win? ',error,data)
+  					console.log('much win? ',err,data)
 				});
 				$(".direction").text("right");
 				running = true;
 	       	}
-	       	if (o.x > 5) {
+			if (keyCode == 38) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.forward")'}},function(err,data){
   					console.log('much win? ',error,data)
 				});
 				$(".direction").text("forward");
 				running = true;
 	       	}
-	       	if (o.x < -5) {
+	       	if (keyCode == 40) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.backward")'}},function(err,data){
   					console.log('much win? ',error,data)
 				});
 				$(".direction").text("backward");
 				running = true;
 	       	}
+		}
+	    gyro.startTracking(function(o) {
+	    	var running = false;
+	       	if (o.y > 5) {
+	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.left")'}},function(err,data){
+  					console.log('much win? ',err,data)
+				});
+				$(".direction").text("left");
+				running = true;
+	       	}
+	       	if (o.y < -5) {
+	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.right")'}},function(err,data){
+  					console.log('much win? ',err,data)
+				});
+				$(".direction").text("right");
+				running = true;
+	       	}
+	       	if (o.x > 5) {
+	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.forward")'}},function(err,data){
+  					console.log('much win? ',err,data)
+				});
+				$(".direction").text("forward");
+				running = true;
+	       	}
+	       	if (o.x < -5) {
+	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.backward")'}},function(err,data){
+  					console.log('much win? ',err,data)
+				});
+				$(".direction").text("backward");
+				running = true;
+	       	}
 	       	if (running == false) {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.stop")'}},function(err,data){
-  					console.log('much win? ',error,data)
+  					console.log('much win? ',err,data)
 				});
 				$(".direction").text("stop");
 	       	}
