@@ -37,16 +37,17 @@
     	var api = pinoccioAPI('96496cq2hj4gngbfa1lnsifjk2');
 
 		var s = api.sync({stale:1});
+		var running = false;
 
 		window.addEventListener("keyup", function() {
 	       		api.rest({url:"/v1/1/1/command", data:{command:'command.scout(2, "rover.stop")'}},function(err,data){
   					console.log('much win? ',err,data)
 				});
 				$(".direction").text("stop");
+				running = false;
 		}, false);
 		window.addEventListener("keydown", onKeyDown, false);
-		var running = false;
-		// Keydown function, for the DJ
+
 		function onKeyDown(event){
 			var keyCode = event.keyCode;
 			console.log(keyCode);
