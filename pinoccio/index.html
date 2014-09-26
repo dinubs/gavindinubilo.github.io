@@ -37,6 +37,14 @@
     	var api = pinoccioAPI('96496cq2hj4gngbfa1lnsifjk2');
 
 		var s = api.sync({stale:1});
+
+		window.addEventListener("keyup", onKeyDown, false);
+
+		// Keydown function, for the DJ
+		function onKeyDown(event){
+			var keyCode = event.keyCode;
+			console.log(keycode);
+		}
 	    gyro.startTracking(function(o) {
 	    	var running = false;
 	       	if (o.y > 5) {
