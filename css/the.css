@@ -126,11 +126,23 @@ section {
   section:nth-of-type(even) {
     background-color: #E5E1D1;
   }
+  section:last-of-type {
+    background-image: url("../images/last-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 80%;
+  }
 
   .inner-content {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+  section:last-of-type .inner-content {
+    padding: 25px;
+    background-color: rgba(255,255,255, 0.8);
   }
 
 /******************************\
