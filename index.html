@@ -6,94 +6,7 @@
     <meta name="description" content="Gavin Dinubilo Portfolio Site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gavin Dinubilo</title>
-    <style>#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9999; 
-    font-size: 60px; text-align: center; padding-top: 200px; color: #fff;
-      }
-      #bars {
-    height: 30px;
-    left: 50%;
-    margin: -30px 0 0 -20px;
-    position: absolute;
-    top: 50%;
-    width: 40px;
-}
-span.loading {
-  color: #fff;
-  font-family: Verdana;
-  position: absolute;
-  width: 100%;
-  top: 50%; 
-  text-align: center;
-  animation: text-color 2s linear infinite alternate;
-  font: normal 16px/1em "Merriweather Sans", sans-serif;
-}
-
-.bar {
-   background: #E20074;
-    bottom: 1px;
-    height: 3px;
-    position: absolute;
-    width: 3px;      
-    animation: sound 0ms -800ms ease-in-out infinite alternate, colors 0ms -800ms linear infinite alternate;
-}
-@keyframes colors {
-  0% {
-    background: #4285F4;
-    color: #4285F4;
-  }
-  25% {
-    background: #DE3E35;
-    color: #DE3E35;
-  }
-  50% {
-    background: #F7C223;
-    color: #F7C223;
-  }
-  75% {
-    background: #1B9A59;
-    color: #1B9A59;
-  }
-  100% {
-    background: #4285F4;
-    color: #4285F4;
-  }
-}
-@keyframes text-color {
-  0% {
-    color: #4285F4;
-  }
-  25% {
-    color: #DE3E35;
-  }
-  50% {
-    color: #F7C223;
-  }
-  75% {
-    color: #1B9A59;
-  }
-  100% {
-    color: #4285F4;
-  }
-}
-@keyframes sound {
-    0% {
-        height: 3px; 
-    }
-    100% {
-        height: 28px;        
-    }
-}
-
-.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
-.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
-.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
-.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
-.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
-.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
-.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
-.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
-.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
-.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​
+    <style>#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #2c343b; z-index:9999;font-size: 60px; text-align: center; padding-top: 200px; color: #fff;}span.loading{color:#fff;font-family:Verdana;position:absolute;text-align:center;-webkit-animation:text-color 2s linear infinite alternate;animation:text-color 2s linear infinite alternate;font:normal 16px/1em "Merriweather Sans",sans-serif}.spinner{top: 50%;-webkit-animation:rotator 1.4s linear infinite;animation:rotator 1.4s linear infinite}@-webkit-keyframes rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}@keyframes rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center;-webkit-animation:dash 1.4s ease-in-out infinite,colors 5.6s ease-in-out infinite;animation:dash 1.4s ease-in-out infinite,colors 5.6s ease-in-out infinite}@-webkit-keyframes colors{0%{stroke:#4285F4}25%{stroke:#DE3E35}50%{stroke:#F7C223}75%{stroke:#1B9A59}100%{stroke:#4285F4}}@keyframes colors{0%{stroke:#4285F4}25%{stroke:#DE3E35}50%{stroke:#F7C223}75%{stroke:#1B9A59}100%{stroke:#4285F4}}@-webkit-keyframes dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg)}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg)}}@keyframes dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg)}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg)}
     </style>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -316,24 +229,16 @@ span.loading {
             </p>
         </div>
     </section>
-    <div id="cover"><div id='bars'>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-  <div class='bar'></div>
-</div>
-<span class="loading">Loading</span</div>
+    <div id="cover">
+      <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script>
       $(window).on('load', function() {
-        $("#cover").fadeOut(200);
+        $("#cover").delay( 800 ).fadeOut(500);
       });
     </script>
     <script src="js/main.min.js"></script>
