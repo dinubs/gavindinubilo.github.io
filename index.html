@@ -6,6 +6,9 @@
     <meta name="description" content="Gavin Dinubilo Portfolio Site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gavin Dinubilo</title>
+    <style>#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9999; 
+    font-size: 60px; text-align: center; padding-top: 200px; color: #fff;
+}</style>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/the.min.css">
@@ -227,8 +230,14 @@
             </p>
         </div>
     </section>
+    <div id="cover">LOADING</div>
 
     <script src="js/jquery.js"></script>
+    <script>
+      $(window).on('load', function() {
+        $("#cover").fadeOut(200);
+      });
+    </script>
     <script src="js/main.min.js"></script>
     <script src="js/viewport.js"></script>
 </body>
