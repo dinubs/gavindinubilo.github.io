@@ -6,25 +6,23 @@
     <meta name="description" content="Gavin Dinubilo Portfolio Site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gavin Dinubilo</title>
-    <style>#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #2c343b; z-index:9999;font-size: 60px; text-align: center; padding-top: 200px; color: #fff;}span.loading{color:#fff;font-family:Verdana;position:absolute;text-align:center;-webkit-animation:text-color 2s linear infinite alternate;animation:text-color 2s linear infinite alternate;font:normal 16px/1em "Merriweather Sans",sans-serif}.spinner{top: 50%;-webkit-animation:rotator 1.4s linear infinite;animation:rotator 1.4s linear infinite}@-webkit-keyframes rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}@keyframes rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center;-webkit-animation:dash 1.4s ease-in-out infinite,colors 5.6s ease-in-out infinite;animation:dash 1.4s ease-in-out infinite,colors 5.6s ease-in-out infinite}@-webkit-keyframes colors{0%{stroke:#4285F4}25%{stroke:#DE3E35}50%{stroke:#F7C223}75%{stroke:#1B9A59}100%{stroke:#4285F4}}@keyframes colors{0%{stroke:#4285F4}25%{stroke:#DE3E35}50%{stroke:#F7C223}75%{stroke:#1B9A59}100%{stroke:#4285F4}}@-webkit-keyframes dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg)}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg)}}@keyframes dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg)}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg)}
-    </style>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/the.min.css">
-    <link rel="stylesheet" href="css/ihover.min.css">
+    <link rel="stylesheet" href="css/the.css">
 </head>
 
 <body>
     <header>
         <h1 class="down">Hello! I'm Gavin
-            <small>Web Designer/Developer, Maker</small>
+            <small>Web Designer, Developer, Programmer, Maker</small>
         </h1>
+        <div class="botTri"></div>
     </header>
-    <section id="about">
+    <div class="seperator">
+        <div class="botTri"></div>
+    </div>
+    <section id="about" class="blue">
         <div class="inner-content">
-          <p class="center">
-              I do not talk, I just do.
-          </p>
           <div id="code" class="down">
               <div class="terminalTop">
                 <div class="red circle"></div>
@@ -41,15 +39,9 @@
                       <br>
                       <br>
                   </span>
-                  &gt; Gavin.greeting
+                  &gt; Gavin.achievements
                   <br>
-                  <span class="answer">&nbsp;&nbsp;=&gt; "Hello World, I'm a Web Developer."
-                      <br>
-                      <br>
-                  </span>
-                  &gt; Gavin.motto
-                  <br>
-                  <span class="answer">&nbsp;&nbsp;=&gt; "Long Name, Amazing Results"
+                  <span class="answer">&nbsp;&nbsp;=&gt; "Time Magazine 2006 Person of the Year."
                       <br>
                       <br>
                   </span>
@@ -77,15 +69,20 @@
                       <br>
                       <br>
                   </span>
-                  &gt; Gavin.skills
+                  &gt; Gavin.skills.each
                   <br>
-                  <span class="answer">&nbsp;&nbsp;=&gt; ["Web", "Node.js", "Ruby on Rails", "Objective-C", "Javascript", "CSS"]
-                      <br>
+                  <span class="answer">&nbsp;&nbsp;=&gt; "Ruby on Rails"<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Swift"<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Objective-C"<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Java"<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"HTML"<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Javascript"<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"CSS"<br>
                       <br>
                   </span>
                   &gt; Gavin.interests
                   <br>
-                  <span class="answer">&nbsp;&nbsp;=&gt; ["Web", "Code", "Microcontrollers", "Games", "Music", "Food"]
+                  <span class="answer">&nbsp;&nbsp;=&gt; ["Web", "Code", "Microcontrollers", "Games", "Music"]
                       <br>
                       <br>
                   </span>
@@ -114,18 +111,24 @@
                       <br>
                       <br>
                   </span>
+                  &gt; Gavin.to_s
+                  <br>
+                  <span class="answer">
+                    &nbsp;&nbsp;=&gt; "Hi, I'm Gavin. I was Time Magazines 2006 Person of the Year, born in Reno, Nevada. I'm currently attending Truckee Meadows Community College for Web Development, and my expected graduation date is Fall of 2015. My skills include, but are not limited to; Ruby on Rails, Swift, Objective-C, Java, HTML, Javascript, and CSS. My interests are the Web, coding, Microcontrollers (such as the Pinoccio), video games, and music. <br>You can get in contact with me best by email: <a href="mailto:gavin_dinubilo@mail.tmcc.edu">gavin_dinubilo@mail.tmcc.edu</a>."
+                  </span>
               </div>
           </div>
-          <p>
-            Hi, I'm Gavin. I'm a web developer/designer, in the Reno, Nevada area. I'm currently a student at Truckee Meadows Community College, where I'm studying Web Development, my expected graduation date is to be Fall 2015. I have an expertise in HTML, CSS, and Javascript. My currently employment is at <a href="http://www.tmcc.edu">Truckee Meadows Community College</a> under the Web Services department, along with that I'm also an intern at <a href="http://www.pinocc.io">Pinoccio</a>.
-          </p>
         </div>
+        <div class="botTri"></div>
     </section>
-    <section>
+    <div class="seperator">
+        <div class="botTri"></div>
+    </div>
+    <section class="white">
         <div class="inner-content resume">
             <h3 class="center">Resum&eacute;</h3>
             <h4>Education</h4>
-            <div>
+            <div class="resume-item">
                 <img src="images/tmcc.png" class="rounded school-icon">
                 <p>
                     <a href="http://www.tmcc.edu">Truckee Meadows Community College</a>
@@ -135,11 +138,11 @@
                 <p>
                     <span>Relevant Coursework:</span>
                 </p>
-                <ul>
-                    <li>Responsive Web-Design</li>
-                    <li>Computer Programming</li>
-                    <li>Web-Design</li>
-                    <li>Graphic Design</li>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-1 fa-circle-o"></i>Responsive Web-Design</li>
+                    <li><i class="fa-li fa fa-1 fa-circle-o"></i>Computer Programming</li>
+                    <li><i class="fa-li fa fa-1 fa-circle-o"></i>Web-Design</li>
+                    <li><i class="fa-li fa fa-1 fa-circle-o"></i>Graphic Design</li>
                 </ul>
             </div>
             <h4>Work Experience</h4>
@@ -154,7 +157,7 @@
                     <span>What I Worked On:</span>
                 </p>
                 <p class="resume-text">
-                    Pinoccio is a Hardware Startup based in Reno, NV that sells a Micro-Controller automatically connected to the internet. While working at Pinoccio I wat an in-house maker/intern, and I worked on creating projects to inspire buyers what htey could make. I created many successful projects including a Mouse to control your computer with, and a way to program the Micro-Controller inside the game Minecraft.
+                    Pinoccio is a Hardware Startup based in Reno, NV that sells a Micro-Controller automatically connected to the internet. While working at Pinoccio I wat an in-house maker/intern, and I worked on creating projects to inspire buyers what they could make. I created many successful projects including a Mouse to control your computer with, and a way to program the Micro-Controller inside the game Minecraft.
                 </p>
                 <p class="resume-text">
                     You can view the tutorial I wrote on these projects over on <a href="http://www.hackster.io/gavin">hackster.io</a>
@@ -173,52 +176,12 @@
                 </p>
             </div>
         </div>
+        <div class="botTri"></div>
     </section>
-    <section>
-        <div class="inner-content">
-            <h3 class="center">Work + Fun</h3>
-            <div class="ih-item square effect13 left_to_right funItem">
-                <a href="https://itunes.apple.com/us/app/fake-out/id903640901?ls=1&mt=8">
-                    <div class="img">
-                        <img src="images/fakeout.png" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Fake Out</h3>
-                        <p>Fake Out is my first iPhone app to be published on the iOS app store. Check it out!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="ih-item square effect13 right_to_left funItem">
-                <a href="http://www.hackster.io/gavin">
-                    <div class="img">
-                        <img src="images/pinoccio-mouse.JPG" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Pinoccio</h3>
-                        <p>Pinoccio is a micro-controller much like the Arduino, except that it comes ready to be connected to the internet. I have some projects on hackster.io, check them out.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="ih-item square effect13 left_to_right funItem">
-                <a href="http://www.washoecommunityed.org/">
-                    <div class="img">
-                        <img src="images/washoeed.png" alt="img">
-                    </div>
-                    <div class="mask1"></div>
-                    <div class="mask2"></div>
-                    <div class="info">
-                        <h3>Washoe Community Education Site</h3>
-                        <p>Washoe Community Education provides low cost education to the Washoe Community, this site was built for TMCC.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section>
+    <div class="seperator">
+        <div class="botTri"></div>
+    </div>
+    <section class="blue">
         <div class="inner-content">
             <h3 class="center">Let's Meet</h3>
             <p><i class="fa fa-envelope-o"></i>
