@@ -50,6 +50,7 @@ section {
     position: relative;
     background-color: #f2f2f2;
     padding: 30px;
+    overflow: hidden;
 }
     section.blue {
         background-color: #77C4D3;
