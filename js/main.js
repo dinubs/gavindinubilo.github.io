@@ -8,11 +8,5 @@ $(document).ready(function() {
                 }, 1e3), !1
             }
         })
-    }), $("#code").viewportChecker({
-        classToAdd: "up"
-    }), $(".funItem").viewportChecker({
-        classToAdd: "funUp"
-    }), $("h1, .arrow").viewportChecker({
-        classToAdd: "up"
     })
 });
