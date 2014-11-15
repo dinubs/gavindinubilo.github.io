@@ -7,7 +7,6 @@ Colors:
     #C95555
 
 */
-
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
 * { padding: 0; margin: 0; box-sizing: border-box; transition: all .5s;}
 ::selection {
@@ -26,7 +25,7 @@ html, body
     padding: 0;
 }
 body {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   font-family: 'Lato', sans-serif;
   font-size: 17px;
 }
@@ -50,7 +49,6 @@ section {
     position: relative;
     background-color: #f2f2f2;
     padding: 30px;
-    overflow: hidden;
 }
     section.blue {
         background-color: #77C4D3;
@@ -58,6 +56,12 @@ section {
     section.white {
         background-color: #FAFAFA;
     }
+		section.yellow {
+			background-color: #F8CA4D;
+		}
+		section.black {
+			background-color: #292929;
+		}
 
 a {
   color: #C95555;
@@ -96,6 +100,7 @@ h1 {
         padding: 15px 0;
         margin: 0 auto;
         margin-bottom: 10px;
+ 			  overflow: hidden;
     }
 
 #code {
@@ -119,12 +124,15 @@ h1 {
     .terminalTop .text {
       margin-left: 10px;
       display: inline-block;
+			font-weight: strong;
+			color: #383737;
     }
     .terminalTop .circle {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      margin: 2px;
+			margin-top: 4px;
+			margin-left: 2px;
       display: inline-block;
     }
       .terminalTop .circle.red {
@@ -187,8 +195,6 @@ h1 {
         margin-left: -25px;
         z-index: 10017;
         overflow: hidden;
-        -webkit-transform: rotateZ(45deg);
-        -moz-transform: rotateZ(45deg);
         transform: rotateZ(45deg);
     }
 
@@ -213,6 +219,30 @@ ul {
         font-size: 14px;
     }
 
+input:not([type=submit]), textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	margin: 10px 0 ; 
+}
+
+#projects_content {
+	height: 500px;
+}
+
+input[type=submit] {
+	border: none;
+	padding: 20px;
+	width: 100%;
+	background-color: #C95555;
+	color: #fafafa;
+}
+
+.half {
+	width: 50%;
+	float: left;
+}
+
 @media (max-width: 900px) {
   .inner-content {
     margin: 0 15px;
@@ -220,9 +250,9 @@ ul {
 }
 
 @media (max-width: 750px) {
-  #code {
-    margin: 0 15px;
-  }
+	.inner-content {
+		margin: 0;
+	}
   .resume p a:first-child {
     display: block;
   }
@@ -230,6 +260,7 @@ ul {
     text-align: left;
     float: none;
   }
+	.half {
+		width: 100%;
+	}
 }
-
-
