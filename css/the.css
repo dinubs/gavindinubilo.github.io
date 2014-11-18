@@ -264,3 +264,15 @@ input[type=submit] {
 		width: 100%;
 	}
 }
+
+.vimeo-holder {
+    width: 500px !important;
+    height: 281px !important;   
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+}
+    .vimeo-holder figcaption {
+        height: 200px !important;
+    }
+        
