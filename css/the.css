@@ -79,7 +79,7 @@ h1 {
     font-size: 4em;
     text-align: center;
     margin-top: 0;
-    color: #2C343B;
+    color: #fafafa;
     transition: all 1s;
     display: block;
     z-index: 2;
@@ -156,11 +156,18 @@ h1 {
       color: #fafafa;
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
+      line-height: 1.7em;
 }
   #console .answer {
     width: 25%;
   }
-
+    .text-yellow {
+        color: #F8CA4D;
+    }
+    .text-blue {
+        color: #77C4D3;
+    }
+    
 .seperator {
     position: relative;
     width: 100%;
@@ -265,3 +272,15 @@ input[type=submit] {
 		width: 100%;
 	}
 }
+
+.vimeo-holder {
+    width: 500px !important;
+    height: 281px !important;   
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+}
+    .vimeo-holder figcaption {
+        height: 200px !important;
+    }
+        
