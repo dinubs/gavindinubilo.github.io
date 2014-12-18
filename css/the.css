@@ -26,7 +26,8 @@ html, body
 }
 body {
   background-color: #FAFAFA;
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'Arvo', serif;
   font-size: 17px;
 }
 
